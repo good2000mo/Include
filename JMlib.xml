@@ -1,0 +1,4197 @@
+﻿<?xml version="1.0" ?>
+<!--RoboExp system library file interface.-->
+<root>
+ <Func>
+    <Name>SetMotor</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Motor" CHS="马达" CHT="馬達" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>_MOTOR_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>state</Name>
+      <Min>0</Min>
+      <Max>2</Max>
+      <Default>1</Default>
+      <DesDefault>State value,0:corotation;1:stop;2:reversion</DesDefault>
+      <DesCHS>状态值,0:正转;1:不动;2:反转</DesCHS>
+      <DesCHT>狀態值,0:正轉;1:不動;2:反轉</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>speed</Name>
+      <Min>0</Min>
+      <Max>100</Max>
+      <Default>100</Default>
+      <DesDefault>Speed,the bigger the number, the faster the motor</DesDefault>
+      <DesCHS>速度,值越大,马达速度越快</DesCHS>
+      <DesCHT>速度,值越大, 馬達速度越快</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetMotor2</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Motor2" CHS="马达2" CHT="馬達2" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>which</Name>
+      <Min>1</Min>
+      <Max>4</Max>
+      <Default>1</Default>
+      <DesDefault>Motor channel</DesDefault>
+      <DesCHS>马达通道</DesCHS>
+      <DesCHT>马达通道</DesCHT>
+    </Param>
+    <Param>
+      <Type>char</Type>
+      <Name>speed</Name>
+      <Min>-100</Min>
+      <Max>100</Max>
+      <Default>0</Default>
+      <DesDefault>Speed,the bigger the number, the faster the motor</DesDefault>
+      <DesCHS>速度,值越大,马达速度越快</DesCHS>
+      <DesCHT>速度,值越大, 馬達速度越快</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetMotor_Code</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Encode Motor" CHS="编码马达" CHT="编码馬達" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>which</Name>
+      <Min>1</Min>
+      <Max>2</Max>
+      <Default>1</Default>
+      <DesDefault>Motor channel,1 for Motor1/2,2 for Motor3/4</DesDefault>
+      <DesCHS>马达通道,1为Motor1/2,2为Motor3/4</DesCHS>
+      <DesCHT>馬達通道,1爲Motor1/2,2爲Motor3/4</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>state</Name>
+      <Min>0</Min>
+      <Max>2</Max>
+      <Default>1</Default>
+      <DesDefault>State value,0:corotation;1:stop;2:reversion</DesDefault>
+      <DesCHS>状态值,0:正转;1:不动;2:反转</DesCHS>
+      <DesCHT>狀態值,0:正轉;1:不動;2:反轉</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>speed</Name>
+      <Min>0</Min>
+      <Max>100</Max>
+      <Default>100</Default>
+      <DesDefault>Speed,the bigger the number, the faster the motor</DesDefault>
+      <DesCHS>速度,值越大,马达速度越快</DesCHS>
+      <DesCHT>速度,值越大, 馬達速度越快</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetMotorServo</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Servo" CHS="伺服马达" CHT="伺服馬達" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>which</Name>
+      <Min>1</Min>
+      <Max>2</Max>
+      <Default>1</Default>
+      <DesDefault>Motor channel,1 for Motor1/2,2 for Motor3/4</DesDefault>
+      <DesCHS>马达通道,1为Motor1/2,2为Motor3/4</DesCHS>
+      <DesCHT>馬達通道,1爲Motor1/2,2爲Motor3/4</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>state</Name>
+      <Min>0</Min>
+      <Max>2</Max>
+      <Default>1</Default>
+      <DesDefault>State value,0:corotation;1:stop;2:reversion</DesDefault>
+      <DesCHS>状态值,0:正转;1:不动;2:反转</DesCHS>
+      <DesCHT>狀態值,0:正轉;1:不動;2:反轉</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>speed</Name>
+      <Min>0</Min>
+      <Max>100</Max>
+      <Default>100</Default>
+      <DesDefault>Speed,the bigger the number, the faster the motor</DesDefault>
+      <DesCHS>速度,值越大,马达速度越快</DesCHS>
+      <DesCHT>速度,值越大, 馬達速度越快</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>pulse</Name>
+      <Min>0</Min>
+      <Max>6000</Max>
+      <Default>100</Default>
+      <DesDefault>Need to rotate the pulse number</DesDefault>
+      <DesCHS>需要旋转的脉冲数</DesCHS>
+      <DesCHT>需要旋轉的脈沖數</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetWaitForAngle</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="WaitForAngle" CHS="等待目标角度" CHT="等待目標角度" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>which</Name>
+      <Min>1</Min>
+      <Max>2</Max>
+      <Default>1</Default>
+      <DesDefault>Motor channel,1 for Motor1/2,2 for Motor3/4</DesDefault>
+      <DesCHS>马达通道,1为Motor1/2,2为Motor3/4</DesCHS>
+      <DesCHT>馬達通道,1爲Motor1/2,2爲Motor3/4</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>state</Name>
+      <Min>0</Min>
+      <Max>2</Max>
+      <Default>1</Default>
+      <DesDefault>State value,0:corotation;1:stop;2:reversion</DesDefault>
+      <DesCHS>状态值,0:正转;1:不动;2:反转</DesCHS>
+      <DesCHT>狀態值,0:正轉;1:不動;2:反轉</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>speed</Name>
+      <Min>0</Min>
+      <Max>100</Max>
+      <Default>100</Default>
+      <DesDefault>Speed,the bigger the number, the faster the motor</DesDefault>
+      <DesCHS>速度,值越大,马达速度越快</DesCHS>
+      <DesCHT>速度,值越大, 馬達速度越快</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>pulse</Name>
+      <Min>0</Min>
+      <Max>6000</Max>
+      <Default>100</Default>
+      <DesDefault>Need to rotate the pulse number</DesDefault>
+      <DesCHS>需要旋转的脉冲数</DesCHS>
+      <DesCHT>需要旋轉的脈沖數</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetMotorCode0</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Reset encoder" CHS="编码器清零" CHT="复位編碼器" />
+    <Description Default="set pulse counter 0" CHS="将所接端口的马达编码器数值设置为0" CHT="設置脈衝計數為0" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>which</Name>
+      <Min>1</Min>
+      <Max>2</Max>
+      <Default>1</Default>
+      <DesDefault>Motor channel,1 for Motor1/2,2 for Motor3/4</DesDefault>
+      <DesCHS>马达通道,1为Motor1/2,2为Motor3/4</DesCHS>
+      <DesCHT>馬達通道,1爲Motor1/2,2爲Motor3/4</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetMotorCode</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Encoder" CHS="读取编码器" CHT="旋轉編碼器" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>int</ReturnType>
+    <ReturnDes Default="number of pulse" CHS="读取所接端口的马达编码器数值，并存储到选定的存储变量" CHT="編碼盤返回的脈沖數" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>which</Name>
+      <Min>1</Min>
+      <Max>2</Max>
+      <Default>1</Default>
+      <DesDefault>Motor channel,1 for Motor1/2,2 for Motor3/4</DesDefault>
+      <DesCHS>马达通道,1为Motor1/2,2为Motor3/4</DesCHS>
+      <DesCHT>馬達通道,1爲Motor1/2,2爲Motor3/4</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetADScable</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Gray scale measuring" CHS="灰度测量" CHT="灰度測量" />
+    <Description Default="Gray scale measuring" CHS="灰度值测量" CHT="灰度值測量" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="the gray value, range is between 0 and 4095, the bigger the value, the lighter the color"
+      CHS="灰度值,范围0--4095,数值越大,颜色越浅" CHT="灰度值,範圍0--4095,數值越大,顏色越淺" />
+    <Param>
+      <Type>_SCABLEAD_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetADScable10</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="12 Accuracy Gray scale measuring" CHS="12位精度灰度测量" CHT="12位精度灰度測量" />
+    <Description Default="12 Accuracy Gray scale measuring" CHS="12位精度灰度值测量" CHT="12位精度灰度值測量" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="the gray value, range is between 0 and 4095, the bigger the value, the lighter the color"
+      CHS="灰度值,范围0--4095,数值越大,颜色越浅" CHT="灰度值,範圍0--4095,數值越大,顏色越淺" />
+    <Param>
+      <Type>_SCABLEAD_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetADScable3C</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="3 color gray scale measuring" CHS="彩色黑标测量" CHT="彩色黑标测量" />
+    <Description Default="12 Accuracy Gray scale measuring,with led control" CHS="12位精度灰度测量,带有led控制" CHT="12位精度灰度測量,带有led控制" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="the gray value, range is between 0 and 4095, the bigger the value, the lighter the color"
+      CHS="灰度值,范围0--4095,数值越大,颜色越浅" CHT="灰度值,範圍0--4095,數值越大,顏色越淺" />
+    <Param>
+      <Type>_SCABLEAD3C_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>state</Name>
+      <Min>0</Min>
+      <Max>1</Max>
+      <Default>1</Default>
+      <DesDefault>Led's state,1 for open,0 for close </DesDefault>
+      <DesCHS>发光灯状态,1为打开,0为关闭</DesCHS>
+      <DesCHT>发光灯状态,1为打开,0为关闭</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetCentiS</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Delay by centisecond" CHS="1/100秒级延时" CHT="1/100秒級延時" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>s</Name>
+      <Min>1</Min>
+      <Max>200</Max>
+      <Default>1</Default>
+      <DesDefault>Delay value, unit:centisecond</DesDefault>
+      <DesCHS>延时值,单位1/100秒</DesCHS>
+      <DesCHT>延時值,單位1/100秒</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetNS</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Delay by second" CHS="秒级延时" CHT="秒級延時" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>s</Name>
+      <Min>1</Min>
+      <Max>200</Max>
+      <Default>1</Default>
+      <DesDefault>Delay value, unit:second</DesDefault>
+      <DesCHS>延时值,单位秒</DesCHS>
+      <DesCHT>延時值,單位秒</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetTenthS</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Delay by tenth second" CHS="1/10秒级延时" CHT="1/10秒級延時" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>s</Name>
+      <Min>1</Min>
+      <Max>200</Max>
+      <Default>1</Default>
+      <DesDefault>Delay value, unit:tenth second</DesDefault>
+      <DesCHS>延时值,单位1/10秒</DesCHS>
+      <DesCHT>延時值,單位1/10秒</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetThousandthS</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Delay by thousandth second" CHS="1/1000秒级延时" CHT="1/1000秒級延時" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>s</Name>
+      <Min>1</Min>
+      <Max>200</Max>
+      <Default>1</Default>
+      <DesDefault>Delay value, unit:thousandth second</DesDefault>
+      <DesCHS>延时值,单位1/1000秒</DesCHS>
+      <DesCHT>延時值,單位1/1000秒</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetPartsPerMillionS</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Delay by parts per million second" CHS="1/10000秒级延时" CHT="1/10000秒級延時" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>s</Name>
+      <Min>1</Min>
+      <Max>200</Max>
+      <Default>1</Default>
+      <DesDefault>Delay value, unit:parts per million second</DesDefault>
+      <DesCHS>延时值,单位1/10000秒</DesCHS>
+      <DesCHT>延時值,單位1/10000秒</DesCHT>
+  </Param>
+  </Func>
+  <Func>
+    <Name>GetIRDist</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="IR distance measuring" CHS="红外测距" CHT="紅外測距" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="The distance value. Distance between 8cm and 80cm, the closer the bigger " CHS="距离值。使用范围内(8~80cm),距离越近,数值越大" CHT="距離值。使用範圍內(8~80cm),距離越近,數值越大" />
+    <Param>
+      <Type>_IRDISTANCE_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetIRDete</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="IR detect" CHS="红外检测" CHT="紅外檢測" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="1: IR return; 0: no IR return " CHS="1:检测到红外线;0:未检测到红外线" CHT="1:檢測到紅外線;0:未檢測到紅外線" />
+    <Param>
+      <Type>_IRDETECT_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetPhoto</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Ambient light measuring" CHS="环境光测量" CHT="環境光測量" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="the value of light intensity , range is between 0 and 4095, the bigger the value, the stronger the ambient lighter"
+      CHS="环境光值,范围0--4095,数值越大,环境光越亮" CHT="環境光值,範圍0--4095,數值越大, 環境光越亮" />
+    <Param>
+      <Type>_PHOTOSENSOR_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetRemoIR</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Flame measuring" CHS="火焰测量" CHT="火焰測量" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="the flame value, range is between 0 and 4095, the bigger the value, the stronger the flame"
+      CHS="火焰值,范围0--4095,数值越大,火焰越强" CHT="火焰值,範圍0--4095,數值越大,火焰越強" />
+    <Param>
+      <Type>_FLAMEDETECT_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetVolume</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Volume measuring" CHS="音量测量" CHT="音量測量" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="the volume value , range is between 0 and 4095, the bigger the value, the higher  the volume"
+      CHS="音量值,范围0--4095,数值越大,音量越大" CHT="音量值,範圍0--4095,數值越大,音量越大" />
+    <Param>
+      <Type>_MICROPHONE_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetTemperature</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Temperature measuring" CHS="温度测量" CHT="溫度測量" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="the temperature value , range is between 0 and 4095, the bigger the value, the higher the temperature"
+      CHS="温度值,范围0--4095,数值越大,温度越高" CHT="溫度值,範圍0--4095,數值越大,溫度越高" />
+    <Param>
+      <Type>_TEMPERATURE_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetDigitalTemperature</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="DigitalTemperature measuring" CHS="数字温度测量" CHT="数字溫度測量" />
+    <Description Default="DigitalTemperature measuring" CHS="数字温度测量" CHT="数字溫度測量" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="the real temperature value"
+      CHS="真实温度值" />
+    <Param>
+      <Type>_DIGITALTEMPERATURE_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetTentacle</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Touch detect (stable)" CHS="触碰消抖检测" CHT="觸踫消抖檢測" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="1: touch; 0: no touch" CHS="1:有触碰;0:无触碰" CHT="1:有觸碰;0:無觸碰" />
+    <Param>
+      <Type>_TOUCH_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetTouch</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Touch detect" CHS="触碰检测" CHT="觸碰檢測" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="1: touch; 0: no touch" CHS="1:有触碰;0:无触碰" CHT="1:有觸碰;0:無觸碰" />
+    <Param>
+      <Type>_TOUCH_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetFan</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Fan" CHS="风扇" CHT="風扇" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>_FAN_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>state</Name>
+      <Min>0</Min>
+      <Max>2</Max>
+      <Default>1</Default>
+      <DesDefault>State value,0:corotation;1:stop;2:reversion</DesDefault>
+      <DesCHS>状态值,0:正转;1:不动;2:反转</DesCHS>
+      <DesCHT>狀態值,0:正轉;1:不動;2:反轉</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetUaByte</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Send char" CHS="发送字符" CHT="發送字符" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>c</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Use Download port send character. Use Ascii code or 'x' to specify character</DesDefault>
+      <DesCHS>使用通讯端口发送字符。可以使用ASCII码或者'x'方式直接指定</DesCHS>
+      <DesCHT>使用通訊埠發送字符。可以使用ASCII碼或者'x'方式直接指定</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>BaudRate</Name>
+      <Min>0</Min>
+      <Max>6</Max>
+      <Default>6</Default>
+      <DesDefault>BaudRate  0:9600  1:14400  2:19200  3:38400  4:57600  5:76800 6:115200</DesDefault>
+      <DesCHS>波特率  0:9600  1:14400  2:19200  3:38400  4:57600  5:76800 6:115200</DesCHS>
+      <DesCHT>波特率  0:9600  1:14400  2:19200  3:38400  4:57600  5:76800 6:115200</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetUaByte</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Receive char" CHS="接收字符" CHT="接收字符" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="the received char" CHS="接收到的数据" CHT="=接收到的數據" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>BaudRate</Name>
+      <Min>0</Min>
+      <Max>6</Max>
+      <Default>6</Default>
+      <DesDefault>BaudRate  0:9600  1:14400  2:19200  3:38400  4:57600  5:76800 6:115200</DesDefault>
+      <DesCHS>波特率  0:9600  1:14400  2:19200  3:38400  4:57600  5:76800 6:115200</DesCHS>
+      <DesCHT>波特率  0:9600  1:14400  2:19200  3:38400  4:57600  5:76800 6:115200</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetLED</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="LED" CHS="发光" CHT="發光" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>_LED_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>state</Name>
+      <Min>0</Min>
+      <Max>1</Max>
+      <Default>0</Default>
+      <DesDefault>State value,0:LED off;1:LED on</DesDefault>
+      <DesCHS>状态值,0:表示灭;1:表示亮</DesCHS>
+      <DesCHT>狀態值,0:表示滅;1:表示亮</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetIR</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="IRSend" CHS="红外发射" CHT="紅外發射" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>_IRAUTO_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>state</Name>
+      <Min>0</Min>
+      <Max>1</Max>
+      <Default>0</Default>
+      <DesDefault>State value,0:IR off;1:IR on</DesDefault>
+      <DesCHS>状态值,0:停止发射;1:启动发射</DesCHS>
+      <DesCHT>狀態值,0:停止發射;1:啓動發射</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetServo</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Servo" CHS="伺服马达" CHT="伺服馬達" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>_SERVO_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>angle</Name>
+      <Min>0</Min>
+      <Max>220</Max>
+      <Default>90</Default>
+      <DesDefault>angle value, range is between 0 and 180 degree,  error range is beteen -5 and +5. when angle equals 220, it means no control</DesDefault>
+      <DesCHS>角度,范围0--180度,误差范围-5度至+5度</DesCHS>
+      <DesCHT>角度,範圍0--180度,誤差範圍-5度至+5度</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>SetAIServo</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="AI-Servo" CHS="AI伺服马达" CHT="AI伺服馬達" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ID</Name>
+      <Min>1</Min>
+      <Max>253</Max>
+      <Default>1</Default>
+      <DesDefault>Servo ID</DesDefault>
+      <DesCHS>AI伺服马达ID</DesCHS>
+      <DesCHT>AI伺服馬達ID</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>Angle</Name>
+      <Min>0</Min>
+      <Max>359</Max>
+      <Default>90</Default>
+      <DesDefault>angle value, range is between 0 and 359 degree</DesDefault>
+      <DesCHS>角度,范围0--359度</DesCHS>
+      <DesCHT>角度,範圍0--359度</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>Speed</Name>
+      <Min>10</Min>
+      <Max>100</Max>
+      <Default>10</Default>
+      <DesDefault>rotational speed</DesDefault>
+      <DesCHS>旋转速度</DesCHS>
+      <DesCHT>旋轉速度</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>SetAIMotor</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="AI-Motor" CHS="AI马达模式" CHT="AI馬達模式" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ID</Name>
+      <Min>1</Min>
+      <Max>253</Max>
+      <Default>1</Default>
+      <DesDefault>Servo ID</DesDefault>
+      <DesCHS>AI伺服马达ID</DesCHS>
+      <DesCHT>AI伺服馬達ID</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>Dir</Name>
+      <Min>0</Min>
+      <Max>2</Max>
+      <Default>1</Default>
+      <DesDefault>rotational direction 0:forward 1:stop 2:backward</DesDefault>
+      <DesCHS>旋转的方向0:正转 1:停止 2:反转</DesCHS>
+      <DesCHT>旋轉的方向0:正轉 1:停止 2:反轉</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>Speed</Name>
+      <Min>10</Min>
+      <Max>100</Max>
+      <Default>10</Default>
+      <DesDefault>rotational speed</DesDefault>
+      <DesCHS>旋转速度</DesCHS>
+      <DesCHT>旋轉速度</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>SetAICode</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="AI-Code" CHS="AI编码模式" CHT="AI編碼模式" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ID</Name>
+      <Min>1</Min>
+      <Max>253</Max>
+      <Default>1</Default>
+      <DesDefault>Servo ID</DesDefault>
+      <DesCHS>AI伺服马达ID</DesCHS>
+      <DesCHT>AI伺服馬達ID</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>Dir</Name>
+      <Min>0</Min>
+      <Max>2</Max>
+      <Default>1</Default>
+      <DesDefault>rotational direction 0:forward 1:stop 2:backward</DesDefault>
+      <DesCHS>旋转的方向0:正转 1:停止 2:反转</DesCHS>
+      <DesCHT>旋轉的方向0:正轉 1:停止 2:反轉</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>Speed</Name>
+      <Min>10</Min>
+      <Max>100</Max>
+      <Default>10</Default>
+      <DesDefault>rotational speed</DesDefault>
+      <DesCHS>旋转速度</DesCHS>
+      <DesCHT>旋轉速度</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>Cicle</Name>
+      <Min>0</Min>
+      <Max>255</Max>
+      <Default>0</Default>
+      <DesDefault>number of turns</DesDefault>
+      <DesCHS>圈数</DesCHS>
+      <DesCHT>圈數</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>centi-Cicle</Name>
+      <Min>0</Min>
+      <Max>100</Max>
+      <Default>0</Default>
+      <DesDefault>centi-Cicle</DesDefault>
+      <DesCHS>百分之一圈数</DesCHS>
+      <DesCHT>百分之一圈數</DesCHT>
+    </Param>
+  </Func>
+ <Func>
+    <Name>SetAIPowerDown</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="AI Power Down" CHS="AI失电" CHT="AI失電" />
+    <Description Default="AI-Servo Power Down" CHS="AI伺服马达失电不保持" CHT="AI伺服馬達失電不保持" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ID</Name>
+      <Min>1</Min>
+      <Max>253</Max>
+      <Default>1</Default>
+      <DesDefault>Servo ID</DesDefault>
+      <DesCHS>AI伺服马达ID</DesCHS>
+      <DesCHT>AI伺服馬達ID</DesCHT>
+    </Param>
+  </Func>
+   <Func>
+    <Name>GetAIServo</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Read AI" CHS="读AI" CHT="讀AI" />
+    <Description Default="Read AI-Servo" CHS="读取AI伺服马达值" CHT="讀取AI伺服馬達值" />
+    <ReturnType>int</ReturnType>
+    <ReturnDes Default="refer to parameter-'command',it means error when the return value is 9999"
+      CHS="返回值请参考不同command参数，如果返回9999，表示读数出错" CHT="返囬值請參看不同command參數，如果返回9999,表示讀數出錯" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ID</Name>
+      <Min>1</Min>
+      <Max>253</Max>
+      <Default>1</Default>
+      <DesDefault>Servo ID</DesDefault>
+      <DesCHS>AI伺服马达ID</DesCHS>
+      <DesCHT>AI伺服馬達ID</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>command</Name>
+      <Min>1</Min>
+      <Max>4</Max>
+      <Default>1</Default>
+      <DesDefault>1:read angle; 2:read temperature; 3:read speed stage; 4:read ID</DesDefault>
+      <DesCHS>1：读当前位置； 2：读当前温度； 3：读当前速度档位； 4：读伺服ID；</DesCHS>
+      <DesCHT>1：讀當前位置； 2：讀當前溫度； 3：讀當前速度檔位； 4：讀伺服ID</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetSCUServo</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Servo control board" CHS="伺服马达控制板" CHT="伺服馬達控製板" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="1:normal;0: error" CHS="1:正常;0:出错" CHT="1:正常;0:出錯" />
+    <Param>
+      <Type>_SERVOCTRL_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>broadno</Name>
+      <Min>0</Min>
+      <Max>15</Max>
+      <Default>0</Default>
+      <DesDefault>board number</DesDefault>
+      <DesCHS>马达所在板号</DesCHS>
+      <DesCHT>馬達所在板號</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>channel</Name>
+      <Min>0</Min>
+      <Max>15</Max>
+      <Default>0</Default>
+      <DesDefault>number of the servo control channel </DesDefault>
+      <DesCHS>伺服马达号</DesCHS>
+      <DesCHT>伺服馬達號</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>angle</Name>
+      <Min>0</Min>
+      <Max>253</Max>
+      <Default>127</Default>
+      <DesDefault>angle value. from 0(means 0 degree)to 253(means 180 degree)</DesDefault>
+      <DesCHS>角度值,0~253。0表示0度,253表示180度。误差小于1度</DesCHS>
+      <DesCHT>角度值,0~253。0為0度,253為180度。誤差小于1度</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetLCDBack</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="LCD back light CTRL" CHS="液晶背光控制" CHT="液晶背光控製" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>led</Name>
+      <Min>0</Min>
+      <Max>1</Max>
+      <Default>1</Default>
+      <DesDefault>1:back light on; 0: back light off </DesDefault>
+      <DesCHS>1:开背光;0:关背光</DesCHS>
+      <DesCHT>1:開背光;0:關背光</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetLCD1Char</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Display 1 char" CHS="液晶1位显示" CHT="液晶1位顯示" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>x</Name>
+      <Min>0</Min>
+      <Max>219</Max>
+      <Default>0</Default>
+      <DesDefault>X Location</DesDefault>
+      <DesCHS>字符显示X位置</DesCHS>
+      <DesCHT>字符顯示X位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>y</Name>
+      <Min>0</Min>
+      <Max>175</Max>
+      <Default>0</Default>
+      <DesDefault>Y Location</DesDefault>
+      <DesCHS>字符显示Y位置</DesCHS>
+      <DesCHT>字符顯示Y位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>data</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default>'A'</Default>
+      <DesDefault>Display character. Use Ascii code or 'x' to specify character</DesDefault>
+      <DesCHS>要显示的字符。可以使用ASCII码或者'x'方式直接指定</DesCHS>
+      <DesCHT>要顯示的字符。可以使用ASCII碼或者'x'方式直接指定</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>Color</Name>
+      <Min>0</Min>
+      <Max>65595</Max>
+      <Default>YELLOW</Default>
+      <DesDefault>Font color:BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>字体颜色：BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>字體顏色：BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>BG Color</Name>
+      <Min>0</Min>
+      <Max>65595</Max>
+      <Default>BLACK</Default>
+      <DesDefault>background color:BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>背景颜色：BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>背景顏色：BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetLCD3Char</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="3-number display" CHS="3位数字显示" CHT="3位數字顯示" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>x</Name>
+      <Min>0</Min>
+      <Max>219</Max>
+      <Default>0</Default>
+      <DesDefault>Start location</DesDefault>
+      <DesCHS>起始显示X位置</DesCHS>
+      <DesCHT>起始顯示X位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>y</Name>
+      <Min>0</Min>
+      <Max>175</Max>
+      <Default>0</Default>
+      <DesDefault>Start location</DesDefault>
+      <DesCHS>起始显示Y位置</DesCHS>
+      <DesCHT>起始顯示Y位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>int</Type>
+      <Name>Data</Name>
+      <Min>-999</Min>
+      <Max>999</Max>
+      <Default>123</Default>
+      <DesDefault>Display data, do not affect other place</DesDefault>
+      <DesCHS>要显示的数字。在指定位置开始显示数字,液晶其余位置内容不改变</DesCHS>
+      <DesCHT>要顯示的數字。在指定位置開始顯示數字,液晶其餘位置內容不改變</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>Color</Name>
+      <Min>0</Min>
+      <Max>65595</Max>
+      <Default>YELLOW</Default>
+      <DesDefault>Font color:BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>字体颜色：BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>字體顏色：BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>BG Color</Name>
+      <Min>0</Min>
+      <Max>65595</Max>
+      <Default>BLACK</Default>
+      <DesDefault>background color:BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>背景颜色：BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>背景顏色：BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetLCD5Char</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="5-number display" CHS="5位数字显示" CHT="5位數字顯示" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>x</Name>
+      <Min>0</Min>
+      <Max>219</Max>
+      <Default>0</Default>
+      <DesDefault>Start location</DesDefault>
+      <DesCHS>起始显示X位置</DesCHS>
+      <DesCHT>起始顯示X位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>y</Name>
+      <Min>0</Min>
+      <Max>175</Max>
+      <Default>0</Default>
+      <DesDefault>Start location</DesDefault>
+      <DesCHS>起始显示Y位置</DesCHS>
+      <DesCHT>起始顯示Y位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>int</Type>
+      <Name>Data</Name>
+      <Min>-99999</Min>
+      <Max>99999</Max>
+      <Default>12345</Default>
+      <DesDefault>Display data, do not affect other place</DesDefault>
+      <DesCHS>要显示的数字。在指定位置开始显示数字,液晶其余位置内容不改变</DesCHS>
+      <DesCHT>要顯示的數字。在指定位置開始顯示數字,液晶其餘位置內容不改變</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>Color</Name>
+      <Min>0</Min>
+      <Max>65595</Max>
+      <Default>YELLOW</Default>
+      <DesDefault>Font color:BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>字体颜色：BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>字體顏色：BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>BG Color</Name>
+      <Min>0</Min>
+      <Max>65595</Max>
+      <Default>BLACK</Default>
+      <DesDefault>background color:BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>背景颜色：BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>背景顏色：BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetLCD8Char</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="8-number display" CHS="8位数字显示" CHT="8位數字顯示" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>x</Name>
+      <Min>0</Min>
+      <Max>219</Max>
+      <Default>0</Default>
+      <DesDefault>Start location</DesDefault>
+      <DesCHS>起始显示X位置</DesCHS>
+      <DesCHT>起始顯示X位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>y</Name>
+      <Min>0</Min>
+      <Max>175</Max>
+      <Default>0</Default>
+      <DesDefault>Start location</DesDefault>
+      <DesCHS>起始显示Y位置</DesCHS>
+      <DesCHT>起始顯示Y位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>int</Type>
+      <Name>Data</Name>
+      <Min>-99999999</Min>
+      <Max>99999999</Max>
+      <Default>12345678</Default>
+      <DesDefault>Display data, do not affect other place</DesDefault>
+      <DesCHS>要显示的数字。在指定位置开始显示数字,液晶其余位置内容不改变</DesCHS>
+      <DesCHT>要顯示的數字。在指定位置開始顯示數字,液晶其餘位置內容不改變</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>Color</Name>
+      <Min>0</Min>
+      <Max>65595</Max>
+      <Default>YELLOW</Default>
+      <DesDefault>Font color:BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>字体颜色：BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>字體顏色：BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>BG Color</Name>
+      <Min>0</Min>
+      <Max>65595</Max>
+      <Default>BLACK</Default>
+      <DesDefault>background color:BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>背景颜色：BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>背景顏色：BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>SetLCDString</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="display word" CHS="单词显示" CHT="單詞顯示" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>x</Name>
+      <Min>0</Min>
+      <Max>219</Max>
+      <Default>0</Default>
+      <DesDefault>Start location</DesDefault>
+      <DesCHS>起始显示X位置</DesCHS>
+      <DesCHT>起始顯示X位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>y</Name>
+      <Min>0</Min>
+      <Max>175</Max>
+      <Default>0</Default>
+      <DesDefault>Start location</DesDefault>
+      <DesCHS>起始显示Y位置</DesCHS>
+      <DesCHT>起始顯示Y位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>string</Type>
+      <Name>Data</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Display a words,inclue En,number and space,like this "abc"</DesDefault>
+      <DesCHS>显示单词,单词中可包括英文,数字和空格,如"abc"</DesCHS>
+      <DesCHT>顯示單詞,單詞中可包括英文,數字和空格,如"abc"</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>Color</Name>
+      <Min>0</Min>
+      <Max>65595</Max>
+      <Default>YELLOW</Default>
+      <DesDefault>Font color:BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>字体颜色：BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>字體顏色：BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>BG Color</Name>
+      <Min>0</Min>
+      <Max>65595</Max>
+      <Default>BLACK</Default>
+      <DesDefault>background color:BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>背景颜色：BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>背景顏色：BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+</Func>
+  <Func>
+    <Name>SetLCD1Chinese</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="1-Chinese display" CHS="1位中文显示" CHT="1位元中文顯示" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>x</Name>
+      <Min>0</Min>
+      <Max>127</Max>
+      <Default>0</Default>
+      <DesDefault>Start location</DesDefault>
+      <DesCHS>起始显示X位置</DesCHS>
+      <DesCHT>起始顯示X位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>y</Name>
+      <Min>0</Min>
+      <Max>7</Max>
+      <Default>0</Default>
+      <DesDefault>Start location</DesDefault>
+      <DesCHS>起始显示Y位置</DesCHS>
+      <DesCHT>起始顯示Y位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>Data</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Display Chinese, do not affect other place;BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>要显示的汉字。在指定位置开始显示数字,液晶其余位置内容不改变；BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>要顯示的汉字。在指定位置開始顯示數字,液晶其餘位置內容不改變；BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>SetLCDpic</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="display pic" CHS="图片显示" CHT="圖片顯示" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>Data</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Display Pic</DesDefault>
+      <DesCHS>显示图片</DesCHS>
+      <DesCHT>顯示圖片</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetLCDClear</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="LCDClear" CHS="清屏" CHT="清屏" />
+    <Description Default="Clear LCD" CHS="清除LCD所有数据" CHT="清除LCD所有資料" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>Data</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default>BLACK</Default>
+      <DesDefault>Clear color:BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>清屏颜色：BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>清屏顏色：BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetCompassB</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Read angle" CHS="角度测量" CHT="角度測量" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="the current angle value, range is between 0 and 360, it means error when the return value is 9999"
+      CHS="当前角度,范围是0到360度,如果返回9999,表示读数出错" CHT="當前角度,範圍是0到360度,如果返回9999,表示讀數出錯" />
+    <Param>
+      <Type>_COMPASS_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetSysTime</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Get System time" CHS="读取系统时钟" CHT="讀取系統時鐘" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned long</ReturnType>
+    <ReturnDes Default="Get Current system time,unit:10 ms" CHS="读取当前系统时钟值,单位0.01 秒" CHT="讀取當前系統時鐘值,單位0.01 秒" />
+  </Func>
+  <Func>
+    <Name>GetSysTimeMs</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Get System time" CHS="读取系统时钟" CHT="讀取系統時鐘" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned long</ReturnType>
+    <ReturnDes Default="Get Current system time,unit:1 ms" CHS="读取当前系统时钟值,单位0.001 秒" CHT="讀取當前系統時鐘值,單位0.001 秒" />
+  </Func>
+  <Func>
+    <Name>SetSysTime</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Set System time 0" CHS="设置系统时钟为0" CHT="設置系統時鐘为0" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+  </Func>
+  <Func>
+    <Name>GetCompoI</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Read compound eye" CHS="复眼测量" CHT="復眼測量" />
+    <Description Default="Read compound eye" CHS="复眼测量" CHT="復眼測量" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="refer to parameter-'command'"
+      CHS="返回值请参考不同command参数" CHT="返囬值請參看不同command參數" />
+    <Param>
+      <Type>_COMPOUNDEYE_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>command</Name>
+      <Min>1</Min>
+      <Max>12</Max>
+      <Default>8</Default>
+      <DesDefault>1-7:read No.1-Mo.7 flame value; 8:read max flame number; 9:read max flame value; 10:read min flame number; 11:read min flame value; 12:read average flame value</DesDefault>
+      <DesCHS>1-7:读取1-7号光值;8:读取最大值编号;9:读取最大值;10:读取最小值编号;11:读取最小值;12:读取平均值</DesCHS>
+      <DesCHT>1-7:讀取1-7號光值;8:讀取最大值編號;9:讀取最大值;10:讀取最小值編號;11:讀取最小值編號;12:讀取平均值</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetUltrasound</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Read distance" CHS="超声测距" CHT="超聲測距" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="the current distance value, range is between 0 and 500cm, it means error when the return value is 9999"
+      CHS="当前距离,范围是0到600cm,如果返回888,表示超出测距范围;如果返回999,表示读数出错" CHT="當前距離,範圍是0到600cm,如果返回888,表示超出測距範圍;如果返回999,表示讀數出錯" />
+    <Param>
+      <Type>_ULTRASOUND_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+ <Func>
+    <Name>GetAdUltrasound</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Read distance(analog)" CHS="超声测距(模拟)" CHT="超聲測距(模擬)" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="the current distance value, range is between 4 and 230cm,analog output"
+      CHS="当前距离,范围是4到230cm,模拟输出,距离越小，值越小;距离越大，值越大。" CHT="當前距離,範圍是4到230cm,模擬輸出" />
+    <Param>
+      <Type>_ADULTRASOUND_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetWireless</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Wireless Receive data" CHS="无线接收" CHT="無線接收" />
+    <Description Default="Wireless Receive data" CHS="无线接收数据" CHT="無線接收資料" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="Return the receiving data" CHS="返回无线接收到的数据" CHT="返回無線接收到的資料" />
+    <Param>
+      <Type>_WIRELESS_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetWireless</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Wireless send data" CHS="无线发射" CHT="無線發射" />
+    <Description Default="Wireless send data" CHS="无线发射数据" CHT="無線發射資料" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>_WIRELESS_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>wdata</Name>
+      <Min>0</Min>
+      <Max>255</Max>
+      <Default>0</Default>
+      <DesDefault>the sending data</DesDefault>
+      <DesCHS>要发送的数据</DesCHS>
+      <DesCHT>要發送的資料</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>SetData</Name>
+    <Version>3.07</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Store data " CHS="保存数据" CHT="保存資料" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>dataadr</Name>
+      <Min>1</Min>
+      <Max>200</Max>
+      <Default>1</Default>
+      <DesDefault>the address of the Writting data </DesDefault>
+      <DesCHS>要写数据的位置</DesCHS>
+      <DesCHT>要寫資料的位置</DesCHT>
+    </Param>
+   <Param>
+      <Type>unsigned int</Type>
+      <Name>datacode</Name>
+      <Min>0</Min>
+      <Max>4095</Max>
+      <Default>0</Default>
+      <DesDefault>Writting data </DesDefault>
+      <DesCHS>要写数据</DesCHS>
+      <DesCHT>要寫資料</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetData</Name>
+    <Version>3.07</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Reading data" CHS="读取数据" CHT="讀取數據" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="the reading data" CHS="读取到的数据" CHT="=讀取到的數據" />
+   <Param>
+      <Type>unsigned char</Type>
+      <Name>dataaddr</Name>
+      <Min>1</Min>
+      <Max>200</Max>
+      <Default>1</Default>
+      <DesDefault>the address of the reading data </DesDefault>
+      <DesCHS>要读取数据的位置</DesCHS>
+      <DesCHT>要讀取資料的位置</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetSwitch</Name>
+    <Version>3.09</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Switch" CHS="电子开关" CHT="電子開關" />
+    <Description Default="to turn On/Off the switch" CHS="控制电子模块的启动或关闭" CHT="控制電子模組的啟動或關閉" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>_SWITCH_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>state</Name>
+      <Min>0</Min>
+      <Max>1</Max>
+      <Default>0</Default>
+      <DesDefault>State value, 0: Switch Off ; 1: Switch On</DesDefault>
+      <DesCHS>状态值, 0: 表示关闭 ; 1: 表示启动 </DesCHS>
+      <DesCHT>狀態值, 0: 表示關閉 ; 1: 表示啟動 </DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetADextend</Name>
+    <Version>3.11</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Port Extend Module" CHS="端口扩展模块" CHT="埠擴展模組" />
+    <Description Default="Port Extend Module" CHS="端口扩展模块" CHT="埠擴展模組" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="refer to parameter-'command'"
+      CHS="返回值请参考不同command参数" CHT="返囬值請參看不同command參數" />
+    <Param>
+      <Type>_ADEXTEND_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>command</Name>
+      <Min>1</Min>
+      <Max>13</Max>
+      <Default>8</Default>
+      <DesDefault>1-8:read No.1-Mo.8 flame value; 9:read max flame number; 10:read max flame value; 11:read min flame number; 12:read min flame value; 13:read average flame value</DesDefault>
+      <DesCHS>1-8:读取1-8号光值;9:读取最大值编号;10:读取最大值;11:读取最小值编号;12:读取最小值;13:读取平均值</DesCHS>
+      <DesCHT>1-8:讀取1-8號光值;9:讀取最大值編號;10:讀取最大值;11:讀取最小值編號;12:讀取最小值編號;13:讀取平均值</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetCalendar</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Read Clock and Calendar Module" CHS="读时钟日历模块" CHT="讀時鐘日曆模" />
+    <Description Default="Read  the Clock and Calendar" CHS="时钟日历的读取" CHT="時鐘日曆的讀取" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="refer to parameter-'command'"
+      CHS="返回值请参考不同command参数" CHT="返囬值請參看不同command參數" />
+    <Param>
+      <Type>_CALENDAR_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>command</Name>
+      <Min>30</Min>
+      <Max>41</Max>
+      <Default>30</Default>
+      <DesDefault>30:read the value of year; 31:read the value of month; 32:read the value of date; 33:read the value of hour; 34:read the value of minute;35:read the value of second ;  37:read the value of temperature; 38:read the status of button A; 39:read the status of button B;40:read the status of button C;41:read the status of button D</DesDefault>
+      <DesCHS>30:读年数据;31:读月数据;32:读日期数据;33:读时数据;34: 读分数据;35:读秒数据;37:读温度数据;38:读按键A状态(1:20ms前有键按下;0: 20ms前无键按下);39:读按键B状态(1:20ms前有键按下;0: 20ms前无键按下);40:读按键C状态(1:20ms前有键按下;0: 20ms前无键按下);41:读按键D状态(1:20ms前有键按下;0: 20ms前无键按下)</DesCHS>
+      <DesCHT>30:讀年數據;31:讀月數據;32:讀日期資料;33:讀時數據;34: 讀分數據;35:讀秒數據;37:讀溫度資料;38:讀按鍵A狀態(1:20ms前有鍵按下;0: 20ms前無鍵按下);39:讀按鍵B狀態(1:20ms前有鍵按下;0: 20ms前無鍵按下);40:讀按鍵C狀態(1:20ms前有鍵按下;0: 20ms前無鍵按下);41:讀按鍵D狀態(1:20ms前有鍵按下;0: 20ms前無鍵按下)</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>SetCalendar</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Write Clock and Calendar Module" CHS="写时钟日历模块" CHT="寫時鐘日曆模" />
+    <Description Default="Write the Clock and Calendar" CHS="时钟日历的设置" CHT="時鐘日曆的設置" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />    
+    <Param>
+      <Type>_CALENDAR_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>    
+   <Param>
+      <Type>unsigned char</Type>
+      <Name>sec</Name>
+      <Min>0</Min>
+      <Max>59</Max>
+      <Default>0</Default>
+      <DesDefault>Sencond</DesDefault>
+      <DesCHS>秒</DesCHS>
+      <DesCHT>秒</DesCHT>
+    </Param>
+   <Param>
+      <Type>unsigned char</Type>
+      <Name>min</Name>
+      <Min>0</Min>
+      <Max>59</Max>
+      <Default>0</Default>
+      <DesDefault>Minute</DesDefault>
+      <DesCHS>分</DesCHS>
+      <DesCHT>分</DesCHT>
+    </Param>
+   <Param>
+      <Type>unsigned char</Type>
+      <Name>hour</Name>
+      <Min>0</Min>
+      <Max>23</Max>
+      <Default>0</Default>
+      <DesDefault>Hour</DesDefault>
+      <DesCHS>时</DesCHS>
+      <DesCHT>時</DesCHT>
+    </Param>
+   <Param>
+      <Type>unsigned char</Type>
+      <Name>date</Name>
+      <Min>1</Min>
+      <Max>31</Max>
+      <Default>0</Default>
+      <DesDefault>Date</DesDefault>
+      <DesCHS>日期</DesCHS>
+      <DesCHT>日期</DesCHT>
+    </Param>
+   <Param>
+      <Type>unsigned char</Type>
+      <Name>month</Name>
+      <Min>1</Min>
+      <Max>12</Max>
+      <Default>1</Default>
+      <DesDefault>Month</DesDefault>
+      <DesCHS>月</DesCHS>
+      <DesCHT>月</DesCHT>
+    </Param>
+
+   <Param>
+      <Type>unsigned char</Type>
+      <Name>year</Name>
+      <Min>0</Min>
+      <Max>99</Max>
+      <Default>7</Default>
+      <DesDefault>Year</DesDefault>
+      <DesCHS>年</DesCHS>
+      <DesCHT>年</DesCHT>
+    </Param>  
+  </Func>
+<Func>
+    <Name>SetBE2560LCD1</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="LCD display of the calendar Module" CHS="时钟日历模块液晶显示" CHT="時鐘日曆模組液晶顯示" />
+    <Description Default="Write data to the LCD display of the calendar Module" CHS="写数据到时钟日历模块" CHT="寫數據到時鐘日曆模組" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />    
+    <Param>
+      <Type>_CALENDAR_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>command</Name>
+      <Min>50</Min>
+      <Max>55</Max>
+      <Default>50</Default>
+      <DesDefault>50:Write a char to LCD display of the BE2560 module;54:Clear the LCD display of the BE2560 module;55:Clear the data on the designation location of the LCD;</DesDefault>
+      <DesCHS>50:在BE2560模块的LCD上显示字符;54:清除BE2560模块上LCD的内容;55: 清除BE2560模块上LCD某一位的内容;</DesCHS>
+      <DesCHT>50:在BE2560模組的LCD上顯示字元;54:清除BE2560模組上LCD的內容;55: 清除BE2560模組上LCD某一位元的內容;</DesCHT>
+    </Param>  
+  <Param>
+      <Type>unsigned char</Type>
+      <Name>lx</Name>
+      <Min>1</Min>
+      <Max>16</Max>
+      <Default>1</Default>
+      <DesDefault>Star location of the data display</DesDefault>
+      <DesCHS>要显示数据的起始位置</DesCHS>
+      <DesCHT>要顯示資料的起始位置</DesCHT>
+    </Param> 
+   <Param>
+      <Type>unsigned char</Type>
+      <Name>lxdchar</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default>56</Default>
+      <DesDefault>Display data, do not affect other line</DesDefault>
+      <DesCHS>要写的数据。可以使用ASCII码或者'x'方式直接指定。在指定位置开始显示数字,液晶其余位置内容不改变,当选择命令53时，开关BE2560模块上LCD的背光源, 1:开背光;0:关背光</DesCHS>
+      <DesCHT>要寫的數據。可以使用ASCII碼或者'x'方式直接指定。在指定位置開始顯示數字,液晶其餘位置內容不改變,當選擇命令53時，開關BE2560模組上LCD的背光源, 1:開背光;0:關背光</DesCHT>
+    </Param>    
+  </Func>
+<Func>
+    <Name>SetBE2560Back</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Backlight control of the calendar Module" CHS="时钟日历模块背光控制" CHT="時鐘日曆模組背光控制" />
+    <Description Default="Backlight control of the calendar Module" CHS="时钟日历模块背光控制" CHT="時鐘日曆模組背光控制" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />    
+    <Param>
+      <Type>_CALENDAR_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>led</Name>
+      <Min>0</Min>
+      <Max>1</Max>
+      <Default>0</Default>
+      <DesDefault>Control the backlight(1:open;0:close)</DesDefault>
+      <DesCHS>开关BE2560模块上LCD的背光源(1:开;0:关)</DesCHS>
+      <DesCHT>開關BE2560模組上LCD的背光源(1:開;0:關)</DesCHT>
+    </Param>  
+ 
+  </Func>
+<Func>
+    <Name>SetBE2560LCD3</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="LCD display of the calendar Module" CHS="时钟日历模块液晶3位数字显示" CHT="時鐘日曆模組液晶3位數字顯示" />
+    <Description Default="Write data to the LCD display of the calendar Module" CHS="写数据到时钟日历模块液晶" CHT="寫數據到時鐘日曆模組液晶" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />    
+    <Param>
+      <Type>_CALENDAR_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>  
+  <Param>
+      <Type>unsigned char</Type>
+      <Name>lx</Name>
+      <Min>1</Min>
+      <Max>16</Max>
+      <Default>1</Default>
+      <DesDefault>Star location of the data display</DesDefault>
+      <DesCHS>要显示数据的起始位置</DesCHS>
+      <DesCHT>要顯示資料的起始位置</DesCHT>
+    </Param> 
+   <Param>
+      <Type>unsigned int</Type>
+      <Name>lxdint</Name>
+      <Min>0</Min>
+      <Max>999</Max>
+      <Default>123</Default>
+      <DesDefault>Display data, do not affect other line</DesDefault>
+      <DesCHS>要显示的数字。在指定位置开始显示数字,液晶其余位置内容不改变</DesCHS>
+      <DesCHT>要顯示的數字。在指定位置開始顯示數字,液晶其餘位置內容不改變</DesCHT>
+    </Param>    
+  </Func>
+<Func>
+    <Name>SetBE2560LCD8</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="line display of the calendar Module" CHS="时钟日历模块液晶行显示" CHT="時鐘日曆模組液晶行顯示" />
+    <Description Default="Write data to the LCD display of the calendar Module" CHS="写数据到时钟日历模块液晶" CHT="寫數據到時鐘日曆模組液晶" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />    
+    <Param>
+      <Type>_CALENDAR_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>  
+  <Param>
+      <Type>unsigned char</Type>
+      <Name>lx</Name>
+      <Min>0</Min>
+      <Max>1</Max>
+      <Default>0</Default>
+      <DesDefault>line. 0 means upper line, 1 means down one</DesDefault>
+      <DesCHS>指定要显示的行。0 表示上面,1 表示下面</DesCHS>
+      <DesCHT>指定要顯示的行。0 為第一行,1 為第二行</DesCHT>
+    </Param> 
+   <Param>
+      <Type>unsigned long</Type>
+      <Name>lxdint</Name>
+      <Min>0</Min>
+      <Max>99999999</Max>
+      <Default>12345678</Default>
+      <DesDefault>Display data, do not affect other line</DesDefault>
+  　　<DesCHS>要显示的数字。在指定行显示数字,液晶其余位置内容不改变</DesCHS>
+      <DesCHT>要顯示的數字。在指定行顯示數字,液晶其餘位置內容不改變</DesCHT>
+    </Param>    
+  </Func>
+<Func>
+    <Name>SetBE2560spk</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Speaker of the calendar Module" CHS="时钟日历模块发音" CHT="時鐘日曆模組發音" />
+    <Description Default="Set speaker of the calendar Module" CHS="设置时钟日历模块的发音" CHT="設置時鐘日曆模組的發音" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />    
+    <Param>
+      <Type>_CALENDAR_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>  
+  <Param>
+      <Type>unsigned char</Type>
+      <Name>time</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>1</Default>
+      <DesDefault>Delay value of the speaker, unit:tenth second</DesDefault>
+      <DesCHS>发音时间延时值,单位1/10秒</DesCHS>
+      <DesCHT>發音時間延時值,單位1/10秒</DesCHT>
+    </Param> 
+   <Param>
+      <Type>unsigned int</Type>
+      <Name>freq</Name>
+      <Min>0</Min>
+      <Max>65535</Max>
+      <Default>440</Default>
+      <DesDefault>Speaker frequency </DesDefault>
+      <DesCHS>发音频率</DesCHS>
+      <DesCHT>發音頻率</DesCHT>
+    </Param>    
+  </Func>
+
+  <Func>
+    <Name>GetRFIDlastdata</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Read last capture data under surveillance" CHS="读监控数据" CHT="讀監控數據" />
+    <Description Default="Data under surverllance" CHS="监控区数据" CHT="監控數據" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="The current survailence data ranges from 0 to 65535. Return value 888 indicates no card passed" CHS="返回当前监控数据,范围是0到65535,如果返回888,表示感应区没有卡出现过" CHT="返回當前監控區數據，範圍是0到65535，如果返回888，表示感應區內沒有卡出現過" />
+    <Param>
+      <Type>_RFID_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+
+  <Func>
+    <Name>SetRFIDAddress</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Set RFID surveillance address" CHS="设置监控地址" CHT="設置監控地址" />
+    <Description Default="Wireless send data" CHS="设置监控地址" CHT="設置監控地址" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="Return value 1 indicates successful address setting while 0 indicates failure to set the address." CHS="返回1表示设置成功，返回0表示设置失败" CHT="返回1表示設置成功，返回0表示設置失敗" />
+    <Param>
+      <Type>_RFID_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>SetRFIDAddress</Name>
+      <Min>1</Min>
+      <Max></Max>
+      <Default>1</Default>
+      <DesDefault>the sending data</DesDefault>
+      <DesCHS>监控地址</DesCHS>
+      <DesCHT>監控地址</DesCHT>
+    </Param>
+  </Func>
+ <Func>
+    <Name>GetRFIDData</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="get RFID data" CHS="读RFID数据" CHT="讀RFID數據" />
+    <Description Default="get RFID data" CHS="读RFID数据" CHT="讀RFID數據" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="Return value 1 indicates successful address setting while 0 indicates failure to set the address." CHS="返回当前地址数据,范围是0到255,如果返回888,表示读卡错误；如果返回999表示感应区内没有卡" CHT="返回當前地址數據，範圍是0到255，如果返回888，表示讀卡錯誤；如果返回999表示感應區沒有卡" />
+    <Param>
+      <Type>_RFID_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>RFIDAddress</Name>
+      <Min>1</Min>
+      <Max></Max>
+      <Default>1</Default>
+      <DesDefault>Address</DesDefault>
+      <DesCHS>地址</DesCHS>
+      <DesCHT>地址</DesCHT>
+    </Param>
+  </Func>
+ <Func>
+    <Name>SetRFIDData</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="wirte RFID data" CHS="写RFID数据" CHT="寫RFID數據" />
+    <Description Default="wirte RFID data" CHS="写RFID数据" CHT="寫RFID數據" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="Return value 1 indicates successful address setting while 0 indicates failure to set the address." CHS="返回1表示设置成功，返回0表示设置失败" CHT="返回1表示設置成功，返回0表示設置失敗" />
+    <Param>
+      <Type>_RFID_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>RFIDData</Name>
+      <Min>0</Min>
+      <Max>255</Max>
+      <Default></Default>
+      <DesDefault>send data</DesDefault>
+      <DesCHS>发送的数据</DesCHS>
+      <DesCHT>發送的數據</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>RFIDAddress</Name>
+      <Min>1</Min>
+      <Max></Max>
+      <Default>1</Default>
+      <DesDefault>Address</DesDefault>
+      <DesCHS>地址</DesCHS>
+      <DesCHT>地址</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetRFIDAddress</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Set RFID surveillance address" CHS="设置监控地址" CHT="設置監控地址" />
+    <Description Default="Wireless send data" CHS="设置监控地址" CHT="設置監控地址" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="Return value 1 indicates successful address setting while 0 indicates failure to set the address." CHS="返回1表示设置成功，返回0表示设置失败" CHT="返回1表示設置成功，返回0表示設置失敗" />
+    <Param>
+      <Type>_RFID_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>SetRFIDAddress</Name>
+      <Min>1</Min>
+      <Max></Max>
+      <Default>1</Default>
+      <DesDefault>the sending data</DesDefault>
+      <DesCHS>监控地址</DesCHS>
+      <DesCHT>監控地址</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetHumidity</Name>
+    <Version>3.17a</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Humidity value measuring" CHS="湿度测量" CHT="濕度測量" />
+    <Description Default="Humidity value measuring" CHS="湿度值测量" CHT="濕度值測量" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="the humidity value, range is between 0 and 100, the bigger the value, the more the humidity"
+      CHS="湿度值,范围0--100,数值越大,湿度越大" CHT="濕度值,範圍0--100,數值越大,濕度越大" />
+    <Param>
+      <Type>_HUMIDITY_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetInfrared</Name>
+    <Version>3.17a</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="pyroelectric infrared value measuring" CHS="热析红外测量" CHT="熱析紅外測量" />
+    <Description Default="pyroelectric infrared value measuring" CHS="人体热析红外测量" CHT="人體熱析紅外測量" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="the pyroelectric infrared value, range is between 0 and 4095, the bigger the value, the stronger the infrared"
+      CHS="人体红外线值,范围0--4095,数值越大,红外线越强" CHT="人體紅外線值,範圍0--4095,數值越大,紅外線越強" />
+    <Param>
+      <Type>_PYIFRARED_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max> 
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetSlope</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Slope dect" CHS="倾斜检测" CHT="傾斜檢測" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="the range is between 0 and 3" CHS="返回东南西北四个方向，分别返回1、2、3、4，0表示没有器件" CHT="返回東南西北四個方向，分別返回1、2、3、4，0表示沒有器件" />
+    <Param>
+      <Type>_SLOPE_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetTrace</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Intelligent Tracing Module" CHS="智能寻迹模块" CHT="智能尋跡模塊" />
+    <Description Default="Intelligent Tracing Module" CHS="智能寻迹模块" CHT="智能尋跡模塊" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="refer to parameter-'command'"
+      CHS="返回值请参考不同command参数" CHT="返囬值請參看不同command參數" />
+    <Param>
+      <Type>_TRACE_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>command</Name>
+      <Min>1</Min>
+      <Max>20</Max>
+      <Default>9</Default>
+      <DesDefault>1-8:read No.1-No.8 flame value; 9:Channel state;10:(reserved);11-18:No.1-No.8 reference value;19:initialization state.1 is ok; 20:scan the ground again</DesDefault>
+      <DesCHS>1-8:读取1-8号光值;9:通道状态;10:(保留);11-18:读取1-8号的参考值;19:设备运行状态，1表示已经就绪; 20：重新扫描</DesCHS>
+      <DesCHT>1-8:讀取1-8號光值;9:通道狀態;10:(保留);11-18:讀取1-8號的參考值;19:設備運行狀態，1表示已經就緒;20:重新掃描</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>SetTraceRef</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Trace Advance Setting" CHS="寻迹高级设置" CHT="尋跡高級設置" />
+    <Description Default="Trace Advance Setting" CHS="寻迹高级设置" CHT="尋跡高級設置" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return"
+      CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>_TRACE_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch0</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>40</Default>
+      <DesDefault>Channel 0 of the reference value</DesDefault>
+      <DesCHS>通道0的参考值</DesCHS>
+      <DesCHT>通道0的參考值</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch1</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>40</Default>
+      <DesDefault>Channel 1 of the reference value</DesDefault>
+      <DesCHS>通道1的参考值</DesCHS>
+      <DesCHT>通道1的參考值</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch2</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>40</Default>
+      <DesDefault>Channel 2 of the reference value</DesDefault>
+      <DesCHS>通道2的参考值</DesCHS>
+      <DesCHT>通道2的參考值</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch3</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>40</Default>
+      <DesDefault>Channel 3 of the reference value</DesDefault>
+      <DesCHS>通道3的参考值</DesCHS>
+      <DesCHT>通道3的參考值</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch4</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>40</Default>
+      <DesDefault>Channel 4 of the reference value</DesDefault>
+      <DesCHS>通道4的参考值</DesCHS>
+      <DesCHT>通道4的參考值</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch5</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>40</Default>
+      <DesDefault>Channel 5 of the reference value</DesDefault>
+      <DesCHS>通道5的参考值</DesCHS>
+      <DesCHT>通道5的參考值</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch6</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>40</Default>
+      <DesDefault>Channel 6 of the reference value</DesDefault>
+      <DesCHS>通道6的参考值</DesCHS>
+      <DesCHT>通道6的參考值</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch7</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>40</Default>
+      <DesDefault>Channel 7 of the reference value</DesDefault>
+      <DesCHS>通道7的参考值</DesCHS>
+      <DesCHT>通道7的參考值</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetBuzzer</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Buzzer" CHS="寻迹模块蜂鸣器" CHT="尋跡模塊蜂鳴器" />
+    <Description Default="Buzzer" CHS="寻迹模块蜂鸣器" CHT="尋跡模塊蜂鳴器" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return"
+      CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>_TRACE_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>Ltime</Name>
+      <Min>1</Min>
+      <Max>250</Max>
+      <Default>1</Default>
+      <DesDefault>Bee-ming, unit for 100ms, the largest for 25 seconds</DesDefault>
+      <DesCHS>鸣蜂时间，单位为100ms,最大为25秒</DesCHS>
+      <DesCHT>鳴蜂時間，單位為100ms,最大為25秒</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetCompoI2</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Read Double compound eye" CHS="2代复眼测量" CHT="2代復眼測量" />
+    <Description Default="Read Double　compound eye" CHS="2代复眼测量" CHT="2代復眼測量" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="refer to parameter-'command'"
+      CHS="返回值请参考不同command参数" CHT="返囬值請參看不同command參數" />
+    <Param>
+      <Type>_COMPOUNDEYE2_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>command</Name>
+      <Min>1</Min>
+      <Max>12</Max>
+      <Default>8</Default>
+      <DesDefault>1-7:read No.1-Mo.7 flame value; 8:read max flame number; 9:read max flame value; 10:read min flame number; 11:read min flame value; 12:read average flame value</DesDefault>
+      <DesCHS>1-7:读取1-7号光值;8:读取最大值编号;9:读取最大值;10:读取最小值编号;11:读取最小值;12:读取平均值</DesCHS>
+      <DesCHT>1-7:讀取1-7號光值;8:讀取最大值編號;9:讀取最大值;10:讀取最小值編號;11:讀取最小值編號;12:讀取平均值</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetCompoI3</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="compound eye V3" CHS="3代复眼测量" CHT="3代復眼測量" />
+    <Description Default="compound eye V3" CHS="3代复眼测量" CHT="3代復眼測量" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="refer to parameter-'command'"
+      CHS="返回值请参考不同command参数" CHT="返囬值請參看不同command參數" />
+    <Param>
+      <Type>_COMPOUNDEYE3_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>command</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>8</Default>
+      <DesDefault>1-7:read No.1-Mo.7 flame value; 8:read max flame number; 9:read max flame value; 10:read min flame number; 11:read min flame value; 12:read average flame value;13:set reading B mode; 14:set reading A/C/D mode;15:zero modulation</DesDefault>
+      <DesCHS>1-7:读取1-7号光值;8:读取最大值编号;9:读取最大值光值;10:读取最小值编号;11:读取最小值;12:读取平均值;13:设置为普通检测模式;14:设置为调制检测模式15:调零;</DesCHS>
+      <DesCHT>1-7:讀取1-7號光值;8:讀取最大值編號;9:讀取最大值光值;10:讀取最小值編號;11:讀取最小值;12:讀取平均值;13:設置為普通檢測模式;14:設置為調製檢測模式;15:調零</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetCompoI16</Name>
+    <Version>3.10</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Read 16bit compound eye" CHS="16位复眼测量" CHT="16位復眼測量" />
+    <Description Default="Read 16bit compound eye" CHS="16位复眼测量" CHT="16位復眼測量" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="refer to parameter-'command'"
+      CHS="返回值请参考不同command参数" CHT="返囬值請參看不同command參數" />
+    <Param>
+      <Type>_COMPOUNDEYE16_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>command</Name>
+      <Min>1</Min>
+      <Max>12</Max>
+      <Default>8</Default>
+      <DesDefault>1-7:read No.1-Mo.7 flame value; 8:read max flame number; 9:read max flame value; 10:read min flame number; 11:read min flame value; 12:read average flame value</DesDefault>
+      <DesCHS>1-7:读取1-7号光值;8:读取最大值编号;9:读取最大值;10:读取最小值编号;11:读取最小值;12:读取平均值</DesCHS>
+      <DesCHT>1-7:讀取1-7號光值;8:讀取最大值編號;9:讀取最大值;10:讀取最小值編號;11:讀取最小值編號;12:讀取平均值</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>Charge</Name>
+    <Version>3.26</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Power store module" CHS="储能模块充电" CHT="儲能模塊充電" />
+    <Description Default="Power store module" CHS="储能模块充电" CHT="儲能模塊充電"/>
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>_KICK_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>Kickfootball</Name>
+    <Version>3.26</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Kick football" CHS="射球" CHT="射球" />
+    <Description Default="Kick football" CHS="射球" CHT="射球"/>
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回"/>
+    <Param>
+      <Type>_KICK_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+      <Param>
+      <Type>unsigned char</Type>
+      <Name>kick_num</Name>
+      <Min>0</Min>
+      <Max>1</Max>
+      <Default>0</Default>
+      <DesDefault>0:Kick football by num1 equipment; 1:Kick football by num2 equipment;</DesDefault>
+      <DesCHS>0:用一号电磁铁射球；1：用2号电磁铁射球</DesCHS>
+      <DesCHT>0:用一號電磁鐵射球；1：用2號電磁鐵射球</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetMicroTrace</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Micro Intelligent Tracing Module" CHS="小型智能寻迹模块" CHT="小型智能尋跡模塊" />
+    <Description Default="Micro Intelligent Tracing Module" CHS="小型智能寻迹模块" CHT="小型智能尋跡模塊" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="refer to parameter-'command'"
+      CHS="返回值请参考不同command参数" CHT="返囬值請參看不同command參數" />
+    <Param>
+      <Type>_MICROTRACE_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>command</Name>
+      <Min>1</Min>
+      <Max>20</Max>
+      <Default>9</Default>
+      <DesDefault>1-5:read No.1-No.5 flame value; 9:Channel state;10:(reserved);11-15:No.1-No.5 reference value;19:initialization state.1 is ok; 20:scan the ground again</DesDefault>
+      <DesCHS>1-5:读取1-5号光值;9:通道状态;10:(保留);11-15:读取1-5号的参考值;19:设备运行状态，1表示已经就绪; 20：重新扫描</DesCHS>
+      <DesCHT>1-5:讀取1-5號光值;9:通道狀態;10:(保留);11-15:讀取1-5號的參考值;19:設備運行狀態，1表示已經就緒;20:重新掃描</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetADextend14</Name>
+    <Version>3.11</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Analog sample Module" CHS="14路模拟量采集模块" CHT="14埠擴展模組" />
+    <Description Default="Port Extend Module" CHS="14路模拟量采集模块" CHT="14埠擴展模組" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="refer to parameter-'command'"
+      CHS="返回值请参考不同command参数" CHT="返囬值請參看不同command參數" />
+    <Param>
+      <Type>_ADEXTEND14_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>command</Name>
+      <Min>1</Min>
+      <Max>19</Max>
+      <Default>15</Default>
+      <DesDefault>1-14:read No.1-Mo.14 flame value; 15:read max flame number; 16:read max flame value; 17:read min flame number; 18:read min flame value; 19:read average flame value</DesDefault>
+      <DesCHS>1-14:读取1-14号光值;15:读取最大值编号;16:读取最大值;17:读取最小值编号;18:读取最小值;19:读取平均值</DesCHS>
+      <DesCHT>1-14:讀取1-14號光值;15:讀取最大值編號;16:讀取最大值;17:讀取最小值編號;18:讀取最小值編號;19:讀取平均值</DesCHT>
+    </Param>
+  </Func>
+ <Func>
+    <Name>GetDoor</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Touch detect" CHS="光闸检测" CHT="觸碰檢測" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="1: touch; 0: no touch" CHS="1:光闸间有障碍;0:光闸间无障碍" CHT="1:有觸碰;0:無觸碰" />
+    <Param>
+      <Type>_DOOR_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetClose</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Touch detect" CHS="接近检测" CHT="觸碰檢測" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="1: touch; 0: no touch" CHS="1:有金属物体接近;0:无金属物体接近" CHT="1:有觸碰;0:無觸碰" />
+    <Param>
+      <Type>_CLOSE_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetSmoke</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="smoke detect" CHS="烟雾检测" CHT="烟雾检测" />
+    <Description Default="smoke detect" CHS="烟雾检测" CHT="烟雾检测" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="detect if the smoke is exist.  1:smoke  0:no smoke "
+      CHS="烟雾检测，1：有烟  0：无烟" />
+    <Param>
+      <Type>_SMOKE_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetDigitalTemperature</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="DigitalTemperature measuring" CHS="数字温度测量" CHT="数字溫度測量" />
+    <Description Default="DigitalTemperature measuring" CHS="数字温度测量" CHT="数字溫度測量" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="the real temperature value"
+      CHS="真实温度值" />
+    <Param>
+      <Type>_DIGITALTEMPERATURE_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetIRone</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Touch detect" CHS="红外一体检测" CHT="紅外一體檢測" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="1: touch; 0: no touch" CHS="1:有障碍;0:无障碍" CHT="1:有障碍;0:无障碍" />
+    <Param>
+      <Type>_IRONE_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetPS2Button</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Get PS2 button data" CHS="读取PS2遥控的按键值" CHT="讀取PS2遙控的按鍵值" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="63335:no button was pushed" CHS="66635:没有按键被按下" CHT="65535:沒有按鍵被按下" />
+    <Param>
+      <Type>_PS2_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetPS2LeftRocker</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Get PS2 Left Rocker data" CHS="读取PS2遥控的左摇杆值" CHT="讀取PS2遙控的左搖桿值" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="32896:Rocker wasn't shaked" CHS="32896:摇杆没有被摇动" CHT="32896:搖桿沒有被搖動" />
+    <Param>
+      <Type>_PS2_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetPS2RightRocker</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Get PS2 Right Rocker data" CHS="读取PS2遥控的右摇杆值" CHT="讀取PS2遙控的右搖桿值" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="32896:Rocker wasn't shaked" CHS="32896:摇杆没有被摇动" CHT="32896:搖桿沒有被搖動" />
+    <Param>
+      <Type>_PS2_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetPS2All</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Get PS2 All data" CHS="读取PS2全部值" CHT="讀取PS2全部值" />
+    <Description Default="You need to define global varibles m_Btn1,m_Btn2,m_joy1_X,m_joy1_Y,m_joy2_X,m_joy2_Y，before using this icon" CHS="使用该图标前，必须先定义以下六个全局变量：m_Btn1,m_Btn2,m_joy1_X,m_joy1_Y,m_joy2_X,m_joy2_Y" CHT="使用該圖標前，必須先定義以下六個總體變數：m_Btn1,m_Btn2,m_joy1_X,m_joy1_Y,m_joy2_X,m_joy2_Y" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="" CHS="" CHT="" />
+    <Param>
+      <Type>_PS2_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+   <Func>
+    <Name>SetBluetooth</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Send char to Bluetooth" CHS="向蓝牙发送字符" CHT="向藍牙發送字元" />
+    <Description Default="Send char to Bluetooth" CHS="向蓝牙发送字符" CHT="向藍牙發送字元" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>c</Name>
+      <Min></Min>
+      <Max>255</Max>
+      <Default>1</Default>
+      <DesDefault>Send char to Bluetooth</DesDefault>
+      <DesCHS>向蓝牙发送字符</DesCHS>
+      <DesCHT>向藍牙發送字元</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetBluetooth</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Get char form Bluetooth" CHS="在蓝牙接收字符" CHT="在藍牙接收字元" />
+    <Description Default="Get char form Bluetooth" CHS="在蓝牙接收字符" CHT="在藍牙接收字元" />
+    <ReturnType>unsigned int</ReturnType>
+    <ReturnDes Default="if the ReturnData equal to 888,it means no data " CHS="888表示没有数据，其它为真实数据" CHT="888表示沒有資料，其他為真實資料" />
+  </Func>
+  <Func>
+    <Name>GetBluetoothState</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Bluetooth State" CHS="连接状态" CHT="連接狀態" />
+    <Description Default="Bluetooth connect state" CHS="蓝牙连接状态" CHT="藍牙連接狀態" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="Bluetooth connect state. 1 for connected .0 for unconnected" CHS="蓝牙连接状态 1已经连接 0未连接" CHT="藍牙連接狀態 1已經連接 0未連接" />
+  </Func>
+  <Func>
+    <Name>SetAlowConnect</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="alow to be connected " CHS="允许被连接" CHT="允許被連接" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+      <Param>
+      <Type>unsigned char</Type>
+      <Name>c</Name>
+      <Min>0</Min>
+      <Max>1</Max>
+      <Default>1</Default>
+      <DesDefault>Send char to Bluetooth</DesDefault>
+      <DesCHS>在从模式下 1.允许被连接 0.不允许被连接</DesCHS>
+      <DesCHT>在从模式下 1.允許被連接 0.不允許被連接</DesCHT>
+      </Param>
+   </Func>
+<Func>
+    <Name>SetAutoConnect</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Auto connect" CHS="自动连接" CHT="自動連接" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" /> 
+      <Param>
+      <Type>unsigned char</Type>
+      <Name>c</Name>
+      <Min>0</Min>
+      <Max>1</Max>
+      <Default>1</Default>
+      <DesDefault>Send char to Bluetooth</DesDefault>
+      <DesCHS>在主模式下 1.使用自动连接 0.取消自动连接</DesCHS>
+      <DesCHT>在主模式下 1.使用自動連接 0.取消自動連接</DesCHT>
+      </Param>
+   </Func>
+<Func>
+    <Name>GetButton1</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Button1" CHS="按键1" CHT="按鍵1" />
+    <Description Default="1.touch 0.no touch" CHS="1.按下 0.没有按下" CHT="1.按下 0.沒有按下" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="Get Button1 value" CHS="获取按键1的值" CHT="獲取按鍵1的值" />
+  </Func>
+<Func>
+    <Name>GetButton2</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Button2" CHS="按键2" CHT="按鍵2" />
+    <Description Default="1.touch 0.no touch" CHS="1.按下 0.没有按下" CHT="1.按下 0.沒有按下" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="Get Button2 value" CHS="获取按键2的值" CHT="獲取按鍵2的值" />
+  </Func>
+<Func>
+    <Name>GetButton3</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Button3" CHS="按键3" CHT="按鍵3" />
+    <Description Default="1.touch 0.no touch" CHS="1.按下 0.没有按下" CHT="1.按下 0.沒有按下" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="Get Button3 value" CHS="获取按键3的值" CHT="獲取按鍵3的值" />
+  </Func>
+<Func>
+    <Name>GetButton4</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Button4" CHS="按键4" CHT="按鍵4" />
+    <Description Default="1.touch 0.no touch" CHS="1.按下 0.没有按下" CHT="1.按下 0.沒有按下" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="Get Button4 value" CHS="获取按键4的值" CHT="獲取按鍵4的值" />
+  </Func>
+<Func>
+    <Name>GetParallelP1</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="GetP1" CHS="读取P1" CHT="讀取P1" />
+    <Description Default="return one byte,Bytes of each one representative of each pin state" CHS="返回一个字节,字节的每一位代表每一个针脚的状态" CHT="返回一個位元組,位元組的每一位元代表每一個針腳的狀態" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="return one byte,Bytes of each one representative of each pin state" CHS="返回一个字节,字节的每一位代表每一个针脚的状态" CHT="返回一個位元組,位元組的每一位元代表每一個針腳的狀態" />
+  </Func>
+<Func>
+    <Name>GetParallelP2</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="GetP2" CHS="读取P2" CHT="讀取P2" />
+    <Description Default="return one byte,Bytes of each one representative of each pin state " CHS="返回一个字节,字节的每一位代表每一个针脚的状态" CHT="返回一個位元組,位元組的每一位元代表每一個針腳的狀態" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="return one byte" CHS="返回一个字节,字节的每一位代表每一个针脚的状态" CHT="返回一個位元組,位元組的每一位元代表每一個針腳的狀態" />
+  </Func>
+<Func>
+    <Name>SetParallelP1</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="SetP1" CHS="设置P1" CHT="設置P1" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" /> 
+      <Param>
+      <Type>unsigned char</Type>
+      <Name>c</Name>
+      <Min>0</Min>
+      <Max>255</Max>
+      <Default>0</Default>
+      <DesDefault>Send char to P1</DesDefault>
+      <DesCHS>向P1发送数据</DesCHS>
+      <DesCHT>向P1發送資料</DesCHT>
+      </Param>
+   </Func>
+<Func>
+    <Name>SetParallelP2</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="SetP2" CHS="设置P2" CHT="設置P2" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" /> 
+      <Param>
+      <Type>unsigned char</Type>
+      <Name>c</Name>
+      <Min>0</Min>
+      <Max>255</Max>
+      <Default>0</Default>
+      <DesDefault>Send char to P1</DesDefault>
+      <DesCHS>向P2发送数据</DesCHS>
+      <DesCHT>向P2發送資料</DesCHT>
+      </Param>
+   </Func>
+<Func>
+    <Name>GetTraceV2I2C</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="TraceV2" CHS="智能寻迹模块V2" CHT="智能尋跡模塊V2" />
+    <Description Default="Intelligent Tracing Module V2" CHS="智能寻迹模块V2" CHT="智能尋跡模塊V2" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="refer to parameter-'command'"
+      CHS="返回值请参考不同command参数" CHT="返囬值請參看不同command參數" />
+    <Param>
+      <Type>_TRACEV2_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>command</Name>
+      <Min>1</Min>
+      <Max>27</Max>
+      <Default>9</Default>
+      <DesDefault>1-7:read No.1-No.7 flame value; 8:(reserved);9:Channel state;10:(reserved);11-17:No.1-No.7 reference value;18-20:(reserved);21-27:No1-No.7 analog value;</DesDefault>
+      <DesCHS>1-7:读取通道1-7号相对光值;8:(保留);9:通道状态;10:(保留);11-17:读取通道1-7号的参考值;18-20:(保留);21-27:通道1-7模拟光值;</DesCHS>
+      <DesCHT>1-7:讀取通道1-7號相對光值;8:(保留);9:通道狀態;10:(保留);11-17:讀取通道1-7號的參考值;18-20:(保留);21-27:通道1-7模擬光值;</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>SetTraceV2Color</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Change Color" CHS=" 改变颜色" CHT="改變顏色" />
+    <Description Default="Change Color" CHS="改变通道颜色" CHT="改變通道顏色" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return"
+      CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>_TRACEV2_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch1</Name>
+      <Min>1</Min>
+      <Max>7</Max>
+      <Default>7</Default>
+      <DesDefault>The color of Channel 1</DesDefault>
+      <DesCHS>通道1顏色</DesCHS>
+      <DesCHT>通道1顏色</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch2</Name>
+      <Min>1</Min>
+      <Max>7</Max>
+      <Default>7</Default>
+      <DesDefault>The color of Channel 2</DesDefault>
+      <DesCHS>通道2颜色</DesCHS>
+      <DesCHT>通道2顏色</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch3</Name>
+      <Min>1</Min>
+      <Max>7</Max>
+      <Default>7</Default>
+      <DesDefault>The color of Channel 3</DesDefault>
+      <DesCHS>通道3颜色</DesCHS>
+      <DesCHT>通道3顏色</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch4</Name>
+      <Min>1</Min>
+      <Max>7</Max>
+      <Default>7</Default>
+      <DesDefault>The color of Channel 4</DesDefault>
+      <DesCHS>通道4颜色</DesCHS>
+      <DesCHT>通道4顏色</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch5</Name>
+      <Min>1</Min>
+      <Max>7</Max>
+      <Default>7</Default>
+      <DesDefault>The color of Channel 5</DesDefault>
+      <DesCHS>通道5颜色</DesCHS>
+      <DesCHT>通道5顏色</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch6</Name>
+      <Min>1</Min>
+      <Max>7</Max>
+      <Default>7</Default>
+      <DesDefault>The color of Channel 6</DesDefault>
+      <DesCHS>通道6颜色</DesCHS>
+      <DesCHT>通道6顏色</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch7</Name>
+      <Min>1</Min>
+      <Max>7</Max>
+      <Default>7</Default>
+      <DesDefault>The color of Channel 7</DesDefault>
+      <DesCHS>通道7颜色</DesCHS>
+      <DesCHT>通道7顏色</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>SetTraceV2BeepI2C</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="BuzzerV2" CHS="蜂鸣器V2" CHT="蜂鳴器V2" />
+    <Description Default="TraceV2 Buzzer" CHS="寻迹模块V2蜂鸣器" CHT="尋跡模塊V2蜂鳴器" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return"
+      CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>_TRACEV2_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>BeepTime</Name>
+      <Min>1</Min>
+      <Max>250</Max>
+      <Default>1</Default>
+      <DesDefault>Bee-ming, unit for 100ms, the largest for 25 seconds</DesDefault>
+      <DesCHS>蜂鸣时间，单位为100ms,最大为25秒</DesCHS>
+      <DesCHT>蜂鳴時間，單位為100ms,最大為25秒</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>SetTraceV2PercentI2C</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Percent" CHS="百分比" CHT="百分比" />
+    <Description Default="Set the TraceV2Set percentage of the overall threshold,Percentage = molecules / denominator" CHS="设置寻迹模块V2整体阀值百分比，百分比=分子/分母" CHT="設置尋跡模組V2整體閥值百分比,百分比=分子/分母" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return"
+      CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>_TRACEV2_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>molecular</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>1</Default>
+      <DesDefault>molecular</DesDefault>
+      <DesCHS>分子</DesCHS>
+      <DesCHT>分子</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>denominator</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>3</Default>
+      <DesDefault>denominator</DesDefault>
+      <DesCHS>分母</DesCHS>
+      <DesCHT>分母</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetTraceV2Parallel</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="TraceV2" CHS="智能寻迹模块V2" CHT="智能尋跡模塊V2" />
+    <Description Default="Intelligent Tracing Module V2" CHS="智能寻迹模块V2" CHT="智能尋跡模塊V2" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="refer to each channel state"
+      CHS="返回模块各个通道状态" CHT="返回模組各個通道狀態" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>which</Name>
+      <Min>1</Min>
+      <Max>2</Max>
+      <Default>1</Default>
+      <DesDefault>Pararel Port,1 is P1,2 is P2</DesDefault>
+      <DesCHS>并行硬件接口,1为P1端口，2为P2端口</DesCHS>
+      <DesCHT>並行硬體介面,1為P1埠，2為P2埠</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>SetTraceV2BeepParallel</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="TraceBeepV2" CHS="寻迹蜂鸣器V2" CHT="尋跡蜂鳴器V2" />
+    <Description Default="TraceV2's beep" CHS="智能寻迹模块V2的蜂鸣器" CHT="智慧尋跡模組V2的蜂鳴器" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return"
+      CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>which</Name>
+      <Min>1</Min>
+      <Max>2</Max>
+      <Default>1</Default>
+      <DesDefault>Pararel Port,1 is P1,2 is P2</DesDefault>
+      <DesCHS>并行硬件接口,1为P1端口，2为P2端口</DesCHS>
+      <DesCHT>並行硬體介面,1為P1埠，2為P2埠</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetTouchScreenX</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="TouchScreenX" CHS="触摸屏X" CHT=" 觸摸屏X" />
+    <Description Default="return Touch Screen X axis" CHS="返回触摸屏X轴数据" CHT="返回觸摸屏X轴資料" />    
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="return Touch Screen X axis"
+      CHS="返回触摸屏X轴数据" CHT="返回觸摸屏X轴資料" />
+  </Func>
+<Func>
+    <Name>GetTouchScreenY</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="TouchScreenY" CHS="触摸屏Y" CHT=" 觸摸屏Y" />
+    <Description Default="return Touch Screen Y axis" CHS="返回触摸屏Y轴数据" CHT="返回觸摸屏Y轴資料" />    
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="return Touch Screen Y axis"
+      CHS="返回触摸屏Y轴数据" CHT="返回觸摸屏Y轴資料" />
+  </Func>
+<Func>
+    <Name>GetGSensor</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="G sensor" CHS="重力加速度" CHT=" 重力加速度" />
+    <Description Default="return G sensor value" CHS="返回触摸屏数据" CHT="返回觸摸屏資料" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="refer to parameter-'command'"
+      CHS="返回值请参考不同command参数" CHT="返囬值請參看不同command參數" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>Axis</Name>
+      <Min>1</Min>
+      <Max>3</Max>
+      <Default>1</Default>
+      <DesDefault>1:X axis 2:Y axis 3:Z axis</DesDefault>
+      <DesCHS>1:X轴 2:Y轴 3:Z轴</DesCHS>
+      <DesCHT>1:X軸 2:Y軸 3:Z軸</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetInMic</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Build-in MIC" CHS="内置MIC" CHT="內置MIC" />
+    <Description Default="return Build-in MIC value" CHS="返回内置MIC数据" CHT="返回内置MIC資料" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="return Build-in MIC value"
+     CHS="返回内置MIC数据" CHT="返回内置MIC資料" />
+  </Func>
+<Func>
+    <Name>GetInVotage</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Power votage" CHS="电池电压" CHT="電池電壓" />
+    <Description Default="return Power votage value" CHS="返回电池电压" CHT="返回電池電壓" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="return Power votage value"
+      CHS="返回电池电压" CHT="返回電池電壓" />
+  </Func>
+<Func>
+    <Name>SetInBeep</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Beep" CHS="内置蜂鸣器" CHT="內置蜂鳴器" />
+    <Description Default="Open or Close Beep built in" CHS="打开/关闭 单声蜂鸣器" CHT="打開/關閉 單聲蜂鳴器" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="" CHS="" CHT="" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>state</Name>
+      <Min>0</Min>
+      <Max>1</Max>
+      <Default>1</Default>
+      <DesDefault>Beep's state,1 for open,0 for close </DesDefault>
+      <DesCHS>蜂鸣器状态,1为打开,0为关闭</DesCHS>
+      <DesCHT>蜂鳴器状态,1为打开,0为关闭</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>SetInWireless</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Wireless Send" CHS="无线发送" CHT="無線發送" />
+    <Description Default="Send wireless data" CHS="通过无线发送数据" CHT="通過無線發送資料" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="Send succeed or not,0:succeed 1:fail'"
+      CHS="发送是否成功0:成功 1失败" CHT="發送是否成功0:成功 1失敗" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>Data</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>1</Default>
+      <DesDefault>send data</DesDefault>
+      <DesCHS>输入需要发的数据</DesCHS>
+      <DesCHT>輸入需要發的資料</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetInWireless</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Wireless Receive" CHS="无线接收" CHT=" 無線接收" />
+    <Description Default="Receive Wireless Data 0:invalid" CHS="接收无线数据,0为无效数据" CHT="接收無線資料，0为無效資料" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="return reveive data,0:invalid"
+      CHS="返回接收的数据,0为无效数据" CHT="返回接收的資料，0为無效資料" />
+  </Func>
+ <Func>
+    <Name>SetOneServo</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="One Channel Servo control board" CHS="单通道伺服马达控制" CHT="單通道伺服馬達控製" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return"
+      CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>_SERVOCTRL_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>channel</Name>
+      <Min>1</Min>
+      <Max>8</Max>
+      <Default>1</Default>
+      <DesDefault>number of the servo control channel</DesDefault>
+      <DesCHS>通道编号</DesCHS>
+      <DesCHT>通道編號</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>angle</Name>
+      <Min>0</Min>
+      <Max>180</Max>
+      <Default>90</Default>
+      <DesDefault>angle value. from 0(means 0 degree)to 180(means 180 degree)</DesDefault>
+      <DesCHS>角度值,0~180。0表示0度,180表示180度。</DesCHS>
+      <DesCHT>角度值,0~180。0為0度,180為180度。</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned int</Type>
+      <Name>time</Name>
+      <Min>0</Min>
+      <Max>5000</Max>
+      <Default>0</Default>
+      <DesDefault></DesDefault>
+      <DesCHS>运行时间，运行到指定角度所需时间,单位ms</DesCHS>
+      <DesCHT>運行時間，運行到指定角度所需時間,單位ms</DesCHT>
+    </Param>
+  </Func>
+ <Func>
+    <Name>SetAllServo</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="All Channel Servo control board" CHS="八通道伺服马达控制" CHT="八通道伺服馬達控製" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return"
+      CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>_SERVOCTRL_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>angle1</Name>
+      <Min>0</Min>
+      <Max>180</Max>
+      <Default>90</Default>
+      <DesDefault>Channel 1 angle value. from 0(means 0 degree)to 180(means 180 degree)</DesDefault>
+      <DesCHS>通道1角度值,0~180。0表示0度,180表示180度。</DesCHS>
+      <DesCHT>通道1角度值,0~180。0為0度,180為180度。</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>angle2</Name>
+      <Min>0</Min>
+      <Max>180</Max>
+      <Default>90</Default>
+      <DesDefault>Channel 2 angle value. from 0(means 0 degree)to 180(means 180 degree)</DesDefault>
+      <DesCHS>通道2角度值,0~180。0表示0度,180表示180度。</DesCHS>
+      <DesCHT>通道2角度值,0~180。0為0度,180為180度。</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>angle3</Name>
+      <Min>0</Min>
+      <Max>180</Max>
+      <Default>90</Default>
+      <DesDefault>Channel 3 angle value. from 0(means 0 degree)to 180(means 180 degree)</DesDefault>
+      <DesCHS>通道3角度值,0~180。0表示0度,180表示180度。</DesCHS>
+      <DesCHT>通道3角度值,0~180。0為0度,180為180度。</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>angle4</Name>
+      <Min>0</Min>
+      <Max>180</Max>
+      <Default>90</Default>
+      <DesDefault>Channel 4 angle value. from 0(means 0 degree)to 180(means 180 degree)</DesDefault>
+      <DesCHS>通道4角度值,0~180。0表示0度,180表示180度。</DesCHS>
+      <DesCHT>通道4角度值,0~180。0為0度,180為180度。</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>angle5</Name>
+      <Min>0</Min>
+      <Max>180</Max>
+      <Default>90</Default>
+      <DesDefault>Channel 5 angle value. from 0(means 0 degree)to 180(means 180 degree)</DesDefault>
+      <DesCHS>通道5角度值,0~180。0表示0度,180表示180度。</DesCHS>
+      <DesCHT>通道5角度值,0~180。0為0度,180為180度。</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>angle6</Name>
+      <Min>0</Min>
+      <Max>180</Max>
+      <Default>90</Default>
+      <DesDefault>Channel 6 angle value. from 0(means 0 degree)to 180(means 180 degree)</DesDefault>
+      <DesCHS>通道6角度值,0~180。0表示0度,180表示180度。</DesCHS>
+      <DesCHT>通道6角度值,0~180。0為0度,180為180度。</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>angle7</Name>
+      <Min>0</Min>
+      <Max>180</Max>
+      <Default>90</Default>
+      <DesDefault>Channel 7 angle value. from 0(means 0 degree)to 180(means 180 degree)</DesDefault>
+      <DesCHS>通道7角度值,0~180。0表示0度,180表示180度。</DesCHS>
+      <DesCHT>通道7角度值,0~180。0為0度,180為180度。</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>angle8</Name>
+      <Min>0</Min>
+      <Max>180</Max>
+      <Default>90</Default>
+      <DesDefault>Channel 8 angle value. from 0(means 0 degree)to 180(means 180 degree)</DesDefault>
+      <DesCHS>通道8角度值,0~180。0表示0度,180表示180度。</DesCHS>
+      <DesCHT>通道8角度值,0~180。0為0度,180為180度。</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned int</Type>
+      <Name>time</Name>
+      <Min>0</Min>
+      <Max>5000</Max>
+      <Default>0</Default>
+      <DesDefault></DesDefault>
+      <DesCHS>运行时间，运行到指定角度所需时间,单位ms</DesCHS>
+      <DesCHT>運行時間，運行到指定角度所需時間,單位ms</DesCHT>
+    </Param>
+  </Func>
+ <Func>
+    <Name>SetMotorFreq</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Motor Frequency" CHS="马达频率" CHT="馬達頻率" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>frequency</Name>
+      <Min>200</Min>
+      <Max>10000</Max>
+      <Default>6000</Default>
+      <DesDefault></DesDefault>
+      <DesCHS></DesCHS>
+      <DesCHT></DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetExtGSensor</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="3-axis accelerometer" CHS="3轴加速度" CHT="3軸加速度" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>int</ReturnType>
+    <ReturnDes Default="refer to parameter-'command'"
+      CHS="返回值请参考不同command参数" CHT="返囬值請參看不同command參數" />
+    <Param>
+      <Type>_EXTGSENSOR_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+	</Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>Axis</Name>
+      <Min>1</Min>
+      <Max>3</Max>
+      <Default>1</Default>
+      <DesDefault>1:X axis 2:Y axis 3:Z axis</DesDefault>
+      <DesCHS>1:X轴 2:Y轴 3:Z轴</DesCHS>
+      <DesCHT>1:X軸 2:Y軸 3:Z軸</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetLCDSolidCircle</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Display 1 Solid Circle" CHS="圆" CHT="圓" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>x</Name>
+      <Min>0</Min>
+      <Max>219</Max>
+      <Default>0</Default>
+      <DesDefault>X Location</DesDefault>
+      <DesCHS>圆心坐标X位置</DesCHS>
+      <DesCHT>圓心座標X位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>y</Name>
+      <Min>0</Min>
+      <Max>175</Max>
+      <Default>0</Default>
+      <DesDefault>Y Location</DesDefault>
+      <DesCHS>圆心坐标Y位置</DesCHS>
+      <DesCHT>圓心座標Y位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>radius</Name>
+      <Min>0</Min>
+      <Max>255</Max>
+      <Default>1</Default>
+      <DesDefault>radius of a circle</DesDefault>
+      <DesCHS>圆的半径</DesCHS>
+      <DesCHT>圓的半徑</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>Color</Name>
+      <Min>0</Min>
+      <Max>65595</Max>
+      <Default>YELLOW</Default>
+      <DesDefault>Fill color:BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>圆的颜色：BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>圓的顏色：BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetLCDFilledRectangle</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Display 1 Filled Rectangle" CHS="实心矩形" CHT="實心矩形" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>x1</Name>
+      <Min>0</Min>
+      <Max>219</Max>
+      <Default>0</Default>
+      <DesDefault>X1 Location</DesDefault>
+      <DesCHS>矩形左上角X1位置</DesCHS>
+      <DesCHT>矩形左上角X1位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>y1</Name>
+      <Min>0</Min>
+      <Max>175</Max>
+      <Default>0</Default>
+      <DesDefault>Y1 Location</DesDefault>
+      <DesCHS>矩形左上角Y1位置</DesCHS>
+      <DesCHT>矩形左上角Y1位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>x2</Name>
+      <Min>0</Min>
+      <Max>219</Max>
+      <Default>0</Default>
+      <DesDefault>X2 Location</DesDefault>
+      <DesCHS>矩形右下角X2位置</DesCHS>
+      <DesCHT>矩形右下角X2位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>y2</Name>
+      <Min>0</Min>
+      <Max>175</Max>
+      <Default>0</Default>
+      <DesDefault>Y2 Location</DesDefault>
+      <DesCHS>矩形右下角Y2位置</DesCHS>
+      <DesCHT>矩形右下角Y2位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>Color</Name>
+      <Min>0</Min>
+      <Max>65595</Max>
+      <Default>YELLOW</Default>
+      <DesDefault>Fill color:BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>矩形的颜色：BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>矩形的顏色：BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetLCDRectangle</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Display 1 Rectangle" CHS="矩形" CHT="矩形" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>x1</Name>
+      <Min>0</Min>
+      <Max>219</Max>
+      <Default>0</Default>
+      <DesDefault>X1 Location</DesDefault>
+      <DesCHS>矩形左上角X1位置</DesCHS>
+      <DesCHT>矩形左上角X1位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>y1</Name>
+      <Min>0</Min>
+      <Max>175</Max>
+      <Default>0</Default>
+      <DesDefault>Y1 Location</DesDefault>
+      <DesCHS>矩形左上角Y1位置</DesCHS>
+      <DesCHT>矩形左上角Y1位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>x2</Name>
+      <Min>0</Min>
+      <Max>219</Max>
+      <Default>0</Default>
+      <DesDefault>X2 Location</DesDefault>
+      <DesCHS>矩形右下角X2位置</DesCHS>
+      <DesCHT>矩形右下角X2位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>y2</Name>
+      <Min>0</Min>
+      <Max>175</Max>
+      <Default>0</Default>
+      <DesDefault>Y2 Location</DesDefault>
+      <DesCHS>矩形右下角Y2位置</DesCHS>
+      <DesCHT>矩形右下角Y2位置</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>width</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>1</Default>
+      <DesDefault>Line Width</DesDefault>
+      <DesCHS>线宽</DesCHS>
+      <DesCHT>線寬</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>Color</Name>
+      <Min>0</Min>
+      <Max>65595</Max>
+      <Default>YELLOW</Default>
+      <DesDefault>Line color:BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>矩形的颜色：BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>矩形的顏色：BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+  </Func>
+ <Func>
+    <Name>SetTouchToScreenCoordinate</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Touch Coordinates to Screen Coordinates" CHS="屏幕坐标转显示坐标" CHT="屏幕座標顯示座標" />
+    <Description Default="" CHS="" CHT="" />    
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="Touch Coordinates to Screen Coordinates"
+      CHS="将触摸坐标值转换成屏幕显示坐标值" CHT="將觸摸座標值轉換成屏幕顯示座標值" />
+  </Func>
+<Func>
+    <Name>SetBluetooth</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="SendData" CHS="发送数据" CHT="" />
+    <Description Default="SendData with Bluetooth" CHS="数据通过蓝牙发出" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default=""
+     CHS="" CHT="" />
+    <Param>
+      <Type>int</Type>
+      <Name>value</Name>
+      <Min>0</Min>
+      <Max>255</Max>
+      <Default>1</Default>
+      <DesDefault>the data need to send</DesDefault>
+      <DesCHS>需要发送的数据</DesCHS>
+      <DesCHT></DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>GetBluetooth</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="ReceiveData" CHS="接收数据" CHT="" />
+    <Description Default="Receive the bluetooth data" CHS="接收蓝牙数据" CHT="" />
+    <ReturnType>int</ReturnType>
+    <ReturnDes Default="Receive bluetooth data"
+      CHS="接收到的蓝牙数据0-255,没有数据时返回999" CHT="返回電池電壓" />
+  </Func>
+  <Func>
+    <Name>SetLCD1CharBig</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Display 1 Big char" CHS="液晶1位显示（大）" CHT="液晶1位顯示（大）" />
+    <Description Default="" CHS="显示单个字符：‘0’-‘9’，‘：’" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>x</Name>
+      <Min>0</Min>
+      <Max>219</Max>
+      <Default>0</Default>
+      <DesDefault>X Location</DesDefault>
+      <DesCHS>字符显示X位置</DesCHS>
+      <DesCHT>字符顯示X位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>y</Name>
+      <Min>0</Min>
+      <Max>175</Max>
+      <Default>0</Default>
+      <DesDefault>Y Location</DesDefault>
+      <DesCHS>字符显示Y位置</DesCHS>
+      <DesCHT>字符顯示Y位置</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>data</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default>'0'</Default>
+      <DesDefault>Display character. Use Ascii code or 'x' to specify character</DesDefault>
+      <DesCHS>要显示的字符。可以使用ASCII码或者'x'方式直接指定</DesCHS>
+      <DesCHT>要顯示的字符。可以使用ASCII碼或者'x'方式直接指定</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>Color</Name>
+      <Min>0</Min>
+      <Max>65595</Max>
+      <Default>YELLOW</Default>
+      <DesDefault>Font color:BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>字体颜色：BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>字體顏色：BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>BG Color</Name>
+      <Min>0</Min>
+      <Max>65595</Max>
+      <Default>BLACK</Default>
+      <DesDefault>background color:BLACK:0,RED:63488,GREEN:2016,BLUE:31,YELLOW:65504,PURPLE:63519,CYAN:2047,WHITE:65535</DesDefault>
+      <DesCHS>背景颜色：BLACK（黑）： 0，RED（红）：63488，GREEN（绿）：2016，BLUE（蓝）：31，YELLOW（黄）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHS>
+      <DesCHT>背景顏色：BLACK（黑）： 0，RED（紅）：63488，GREEN（綠）：2016，BLUE（藍）：31，YELLOW（黃）：65504，PURPLE（紫）：63519，CYAN（青）：2047，WHITE（白）：65535</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetIntegrateMotor</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Integrate Motor" CHS="一体板马达" CHT="一體板馬達" />
+    <Description Default="用于BE1729一体板模块" CHS="用於BE1729模組" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default=""
+      CHS="" CHT="" />
+    <Param>
+      <Type>_INTEGRATE_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>state</Name>
+      <Min>0</Min>
+      <Max>2</Max>
+      <Default>1</Default>
+      <DesDefault>State value,0:corotation;1:stop;2:reversion</DesDefault>
+      <DesCHS>状态值,0:正转;1:不动;2:反转</DesCHS>
+      <DesCHT>狀態值,0:正轉;1:不動;2:反轉</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>GetIntegrateAdc</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Read Gray scale" CHS="一体板灰度测量" CHT="一體板灰度測量" />
+    <Description Default="用于BE1729一体板模块" CHS="用於BE1729模組" CHT="" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default=""
+      CHS="返回指定通道灰度值，范围0到255，如果返回999,表示读数出错" CHT="對應通道灰度值,範圍是0到255度,如果返回999,表示讀數出錯" />
+    <Param>
+      <Type>_INTEGRATE_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>channel</Name>
+      <Min>1</Min>
+      <Max>4</Max>
+      <Default>1</Default>
+      <DesDefault></DesDefault>
+      <DesCHS>一体板灰度号</DesCHS>
+      <DesCHT>一體板灰度號</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetMotorPower</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Motor Power" CHS="马达功率" CHT="馬達功率" />
+    <Description Default="" CHS="控制普通马达端口时，M1 Power~M4 Power对应马达通道Motor1~Motor4，控制编码马达时，M1 Power对应编码马达1端口Motor1/2，M2 Power 对应编码马达2端口Motor3/4" CHT="普通馬達，M1 Power~M4 Power控制馬達通道Motor1~Motor4；編碼馬達，M1 Power控制Motor1/2，M2 Power控制Motor3/4" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>M1 Power</Name>
+      <Min>0</Min>
+      <Max>100</Max>
+      <Default>100</Default>
+      <DesDefault></DesDefault>
+      <DesCHS>普通马达M1端口，马达功率,值越大,马达输出功率越大，例如当数值为80时，马达速度为100，则实际输出为80；编码马达1端口功率控制</DesCHS>
+      <DesCHT>普通馬達M1端口，馬達功率,值越大,馬達功率越大；編碼馬達1端口控制</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>M2 Power</Name>
+      <Min>0</Min>
+      <Max>100</Max>
+      <Default>100</Default>
+      <DesDefault></DesDefault>
+      <DesCHS>普通马达M2端口，马达功率,值越大,马达输出功率越大，例如当数值为80时，马达速度为100，则实际输出为80；编码马达2端口功率控制</DesCHS>
+      <DesCHT>普通马达M2端口，馬達功率,值越大,馬達功率越大；編碼馬達2端口控制</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>M3 Power</Name>
+      <Min>0</Min>
+      <Max>100</Max>
+      <Default>100</Default>
+      <DesDefault></DesDefault>
+      <DesCHS>M3端口，马达功率,值越大,马达输出功率越大，例如当数值为80时，马达速度为100，则实际输出为80；编码马达无效</DesCHS>
+      <DesCHT>M3端口，馬達功率,值越大,馬達功率越大；編碼馬達無用</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>M4 Power</Name>
+      <Min>0</Min>
+      <Max>100</Max>
+      <Default>100</Default>
+      <DesDefault></DesDefault>
+      <DesCHS>M4端口，马达功率,值越大,马达输出功率越大，例如当数值为80时，马达速度为100，则实际输出为80；编码马达无效</DesCHS>
+      <DesCHT>M4端口，馬達功率,值越大,馬達功率越大；編碼馬達無用</DesCHT>
+    </Param>
+  </Func> 
+  <Func>
+    <Name>GetColorSensor</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Color Sensor" CHS="颜色检测" CHT="顏色檢測" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned long</ReturnType>
+    <ReturnDes Default="" CHS="" CHT="" />
+    <Param>
+      <Type>_COLOR_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>id</Name>
+      <Min>1</Min>
+      <Max>8</Max>
+      <Default>1</Default>
+      <DesDefault>Color Sensor ID</DesDefault>
+      <DesCHS>颜色传感器ID</DesCHS>
+      <DesCHT>顏色傳感器ID</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>command</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>4</Default>
+      <DesDefault>Read color sensor command</DesDefault>
+      <DesCHS>读颜色传感器命令，1~3 读RGB三原色值，4 读颜色识别结果，5 读RGB888数据，6~8 读原始RGB数据，9~11 RGB模拟光值，12-14 白平衡比例值，15 色调，16 饱和度，17 亮度，18 保留，19 最大输出值，20-60 设置命令，61-66 颜色扩展参考值，67 白色参考值，68 黑色参考值</DesCHS>
+      <DesCHT>读顏色傳感器命令，1~3 讀RGB三原色值，4 讀識別結果，5 讀RGB888，6~8 讀原始RGB，9~11 RGB模擬光值，12-14 白平衡比例值，15 色調，16 飽和度，17 亮度，18 保留，19 最大輸出值，20-60 設置命令，61-66 顏色擴展參考值，67 白色參考值，68 黑色參考值</DesCHT>
+    </Param>
+  </Func>
+    <Func>
+    <Name>GetColorSensorID</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default=" Read Color Sensor ID" CHS="读颜色模块ID" CHT="讀顏色模組ID" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="" CHS="" CHT="" />
+    <Param>
+      <Type>_COLOR_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetColorSensor</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Set Color Sensor" CHS="颜色检测设置" CHT="顏色檢測設置" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="" CHS="" CHT="" />
+    <Param>
+      <Type>_COLOR_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>id</Name>
+      <Min>1</Min>
+      <Max>8</Max>
+      <Default>1</Default>
+      <DesDefault>Color Sensor ID</DesDefault>
+      <DesCHS>颜色传感器ID</DesCHS>
+      <DesCHT>顏色傳感器ID</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>command</Name>
+      <Min>20</Min>
+      <Max>60</Max>
+      <Default>31</Default>
+      <DesDefault>Set color sensor command</DesDefault>
+      <DesCHS>设置颜色传感器命令，20~28 设置灯的状态，29~30保留，31 自动白平衡处理，32 重设白平衡参考值，33 恢复出厂设置，34~36 设白平衡系数，37 设最大颜色值，38 调制模式，39 非调制模式，42 颜色学习，43 停止颜色学习，44 颜色扩展，45 关闭颜色扩展，46-51 设置颜色扩展参考值，52-53 设置黑白参考值，54 黑白阈值模式，55 关闭黑白阈值模式</DesCHS>
+      <DesCHT>设置顏色傳感器命令，20~28 燈的狀態，29~30保留，31 白平衡，32 重設白平衡參考值，33 恢復出廠設置，34~36 設置白平衡係數，37 最大輸出值，38 調製模式，39 非調製模式，42 顏色學習，43 停止顏色學習，44 顏色擴展，45 關閉顏色擴展，46-51 顏色擴展參考值，52-53 黑白參考值，54 黑白閾值模式，55 關閉黑白閾值模式</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned int</Type>
+      <Name>parameter</Name>
+      <Min>0</Min>
+      <Max>65535</Max>
+      <Default>0</Default>
+      <DesDefault>Set color sensor parameter</DesDefault>
+      <DesCHS>设置颜色传感器参数，命令34-37，39，46-53才会用到</DesCHS>
+      <DesCHT>设置顏色傳感器參數，命令34-37，39，46-53用到</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetColorSensorID</Name>
+    <Version>3.0</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Set Color Sensor ID" CHS="设置颜色模块ID" CHT="設置顏色模組ID" />
+    <Description Default="" CHS="" CHT="" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="" CHS="" CHT="" />
+    <Param>
+      <Type>_COLOR_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>id</Name>
+      <Min>0</Min>
+      <Max>8</Max>
+      <Default>0</Default>
+      <DesDefault>Color Sensor ID</DesDefault>
+      <DesCHS>颜色传感器ID，0 广播修改ID，1~8 修改指定ID</DesCHS>
+      <DesCHT>顏色傳感器ID</DesCHT>
+    </Param>
+	<Param>
+      <Type>unsigned char</Type>
+      <Name>parameter</Name>
+      <Min>1</Min>
+      <Max>8</Max>
+      <Default>1</Default>
+      <DesDefault>Set color sensor ID</DesDefault>
+      <DesCHS>设置颜色传感器ID值</DesCHS>
+      <DesCHT>设置顏色傳感器ID值</DesCHT>
+    </Param>
+  </Func>
+  <Func>
+    <Name>SetAHRS</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Set AHRS" CHS="设置姿态方位" CHT="設置姿態方位" />
+    <Description Default="" CHS="" CHT="" />    
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return" CHS="无返回" CHT="無返回" />   
+    <Param>
+      <Type>_AHRS_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>  
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>command</Name>
+      <Min>1</Min>
+      <Max>2</Max>
+      <Default>1</Default>
+      <DesDefault>1:Offest AHRS,2:Reset AHRS</DesDefault>
+      <DesCHS>1：校正一次水平姿态方位，2：恢复出厂设置</DesCHS>
+      <DesCHT>1：校準一次水平姿態方位，2：恢復出廠設置</DesCHT>
+    </Param>  
+  </Func>
+   <Func>
+    <Name>GetAHRS</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Read AHRS" CHS="读姿态方位" CHT="讀姿態方位" />
+    <Description Default="" CHS="" CHT="" />    
+    <ReturnType>int</ReturnType>
+    <ReturnDes Default="return AHRS value" CHS="返回三维全姿态数据，三维加速度，三维角速度或三维磁场强度值" CHT="返回三維全姿態數據，三維加速度，三維角速度或者三維磁場強度值" />   
+    <Param>
+      <Type>_AHRS_</Type>
+      <Name>which</Name>
+      <Min></Min>
+      <Max></Max>
+      <Default></Default>
+      <DesDefault>Hardware interface</DesDefault>
+      <DesCHS>硬件接口</DesCHS>
+      <DesCHT>硬件接口</DesCHT>
+    </Param>  
+    <Param>
+      <Type>unsigned int</Type>
+      <Name>command1</Name>
+      <Min>1</Min>
+      <Max>9</Max>
+      <Default>1</Default>
+      <DesDefault>1:roll angle,2:pitch angle,3:yaw angle,4:X axis acceleration ,5:Y axis acceleration ,6:Z axis acceleration ,7:X axis gyroscope,8:Y axis gyroscope,9:Z axis gyroscope </DesDefault>
+      <DesCHS>1：横滚角，2：仰俯角，3：偏航角，4：X轴加速度，5：Y轴加速度，6：Z轴加速度，7：X轴陀螺仪，8：Y轴陀螺仪,9：Z轴陀螺仪</DesCHS>
+      <DesCHT>1：橫滾角，2：仰俯角，3：偏航角，4：X軸加速度，5：Y軸加速度，6：Z軸加速度，7：X軸陀螺儀，8：Y軸陀螺儀,9：Z軸陀螺儀</DesCHT>
+    </Param>  
+	<Param>
+      <Type>unsigned int</Type>
+      <Name>command2</Name>
+      <Min>0</Min>
+      <Max>1</Max>
+      <Default>0</Default>
+      <DesDefault>0:return current value,1: return next value </DesDefault>
+      <DesCHS>0：读取当前数据；1：重新读取数据</DesCHS>
+      <DesCHT>0：讀取當前即時數據，1：重新讀取數據</DesCHT>
+    </Param>  
+  </Func>
+  <Func>
+    <Name>GetTraceV2Bus</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="TraceV2(BUS485)" CHS="智能寻迹模块V2（BUS485）" CHT="智能尋跡模塊V2（BUS485）" />
+    <Description Default="Intelligent Tracing Module V2" CHS="智能寻迹模块V2" CHT="智能尋跡模塊V2" />
+    <ReturnType>unsigned char</ReturnType>
+    <ReturnDes Default="refer to parameter-'command'"
+      CHS="返回值请参考不同command参数" CHT="返囬值請參看不同command參數" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>id</Name>
+      <Min>1</Min>
+      <Max>4</Max>
+      <Default>1</Default>
+      <DesDefault>TraceV2 ID</DesDefault>
+      <DesCHS>寻迹卡ID</DesCHS>
+      <DesCHT>尋跡卡ID</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>command</Name>
+      <Min>1</Min>
+      <Max>27</Max>
+      <Default>9</Default>
+      <DesDefault>1-7:read No.1-No.7 flame value; 8:(reserved);9:Channel state;10:(reserved);11-17:No.1-No.7 reference value;18-20:(reserved);21-27:No1-No.7 analog value;</DesDefault>
+      <DesCHS>1-7:读取通道1-7号相对光值;8:(保留);9:通道状态;10:(保留);11-17:读取通道1-7号的参考值;18-20:(保留);21-27:通道1-7模拟光值;</DesCHS>
+      <DesCHT>1-7:讀取通道1-7號相對光值;8:(保留);9:通道狀態;10:(保留);11-17:讀取通道1-7號的參考值;18-20:(保留);21-27:通道1-7模擬光值;</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>SetTraceV2ColorBus</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Change Color(BUS485)" CHS=" 改变颜色（BUS485）" CHT="改變顏色（BUS485）" />
+    <Description Default="Change Color" CHS="改变通道颜色" CHT="改變通道顏色" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return"
+      CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>id</Name>
+      <Min>1</Min>
+      <Max>4</Max>
+      <Default>1</Default>
+      <DesDefault>TraceV2 ID</DesDefault>
+      <DesCHS>寻迹卡ID</DesCHS>
+      <DesCHT>尋跡卡ID</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch1</Name>
+      <Min>1</Min>
+      <Max>7</Max>
+      <Default>7</Default>
+      <DesDefault>The color of Channel 1</DesDefault>
+      <DesCHS>通道1顏色</DesCHS>
+      <DesCHT>通道1顏色</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch2</Name>
+      <Min>1</Min>
+      <Max>7</Max>
+      <Default>7</Default>
+      <DesDefault>The color of Channel 2</DesDefault>
+      <DesCHS>通道2颜色</DesCHS>
+      <DesCHT>通道2顏色</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch3</Name>
+      <Min>1</Min>
+      <Max>7</Max>
+      <Default>7</Default>
+      <DesDefault>The color of Channel 3</DesDefault>
+      <DesCHS>通道3颜色</DesCHS>
+      <DesCHT>通道3顏色</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch4</Name>
+      <Min>1</Min>
+      <Max>7</Max>
+      <Default>7</Default>
+      <DesDefault>The color of Channel 4</DesDefault>
+      <DesCHS>通道4颜色</DesCHS>
+      <DesCHT>通道4顏色</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch5</Name>
+      <Min>1</Min>
+      <Max>7</Max>
+      <Default>7</Default>
+      <DesDefault>The color of Channel 5</DesDefault>
+      <DesCHS>通道5颜色</DesCHS>
+      <DesCHT>通道5顏色</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch6</Name>
+      <Min>1</Min>
+      <Max>7</Max>
+      <Default>7</Default>
+      <DesDefault>The color of Channel 6</DesDefault>
+      <DesCHS>通道6颜色</DesCHS>
+      <DesCHT>通道6顏色</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>ch7</Name>
+      <Min>1</Min>
+      <Max>7</Max>
+      <Default>7</Default>
+      <DesDefault>The color of Channel 7</DesDefault>
+      <DesCHS>通道7颜色</DesCHS>
+      <DesCHT>通道7顏色</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>SetTraceV2BeepBus</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="BuzzerV2(BUS485)" CHS="蜂鸣器V2（BUS485）" CHT="蜂鳴器V2（BUS485）" />
+    <Description Default="TraceV2 Buzzer" CHS="寻迹模块V2蜂鸣器" CHT="尋跡模塊V2蜂鳴器" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return"
+      CHS="无返回" CHT="無返回" />
+     <Param>
+      <Type>unsigned char</Type>
+      <Name>id</Name>
+      <Min>1</Min>
+      <Max>4</Max>
+      <Default>1</Default>
+      <DesDefault>TraceV2 ID</DesDefault>
+      <DesCHS>寻迹卡ID</DesCHS>
+      <DesCHT>尋跡卡ID</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>BeepTime</Name>
+      <Min>1</Min>
+      <Max>250</Max>
+      <Default>1</Default>
+      <DesDefault>Bee-ming, unit for 100ms, the largest for 25 seconds</DesDefault>
+      <DesCHS>蜂鸣时间，单位为100ms,最大为25秒</DesCHS>
+      <DesCHT>蜂鳴時間，單位為100ms,最大為25秒</DesCHT>
+    </Param>
+  </Func>
+<Func>
+    <Name>SetTraceV2PercentBus</Name>
+    <Version>3.20</Version>
+    <Author>JoinmaxDigital</Author>
+    <Caption Default="Percent(BUS485)" CHS="百分比（BUS485）" CHT="百分比（BUS485）" />
+    <Description Default="Set the TraceV2Set percentage of the overall threshold,Percentage = molecules / denominator" CHS="设置寻迹模块V2整体阀值百分比，百分比=分子/分母" CHT="設置尋跡模組V2整體閥值百分比,百分比=分子/分母" />
+    <ReturnType>void</ReturnType>
+    <ReturnDes Default="no return"
+      CHS="无返回" CHT="無返回" />
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>id</Name>
+      <Min>1</Min>
+      <Max>4</Max>
+      <Default>1</Default>
+      <DesDefault>TraceV2 ID</DesDefault>
+      <DesCHS>寻迹卡ID</DesCHS>
+      <DesCHT>尋跡卡ID</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>molecular</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>1</Default>
+      <DesDefault>molecular</DesDefault>
+      <DesCHS>分子</DesCHS>
+      <DesCHT>分子</DesCHT>
+    </Param>
+    <Param>
+      <Type>unsigned char</Type>
+      <Name>denominator</Name>
+      <Min>1</Min>
+      <Max>255</Max>
+      <Default>3</Default>
+      <DesDefault>denominator</DesDefault>
+      <DesCHS>分母</DesCHS>
+      <DesCHT>分母</DesCHT>
+    </Param>
+  </Func>
+</root>

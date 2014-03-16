@@ -1,0 +1,111 @@
+﻿<?xml version="1.0"?>
+<!--RoboExp system library file infomations.-->
+<root>
+    <LibraryInfo>
+    <Version>3.09</Version>
+    </LibraryInfo>
+    <Band Default="Performer" CHS="执行模块" CHT="執行模塊">
+      <FuncName>SetMotor</FuncName>
+	  <FuncName>SetMotor2</FuncName>
+	  <FuncName>SetMotorFreq</FuncName>
+	  <FuncName>SetMotorPower</FuncName>
+      <FuncName>SetLED</FuncName>
+      <FuncName>SetAIServo</FuncName>
+      <FuncName>SetAIMotor</FuncName>
+      <FuncName>SetAICode</FuncName>
+	  <FuncName>SetAIPowerDown</FuncName>
+	  <FuncName>GetAIServo</FuncName>
+      <FuncName>SetServo</FuncName>
+      <FuncName>SetFan</FuncName>
+      <FuncName>SetSwitch</FuncName>
+      <FuncName>SetMotor_Code</FuncName>
+      <FuncName>SetMotorCode0</FuncName>
+      <FuncName>GetMotorCode</FuncName>
+      <FuncName>SetMotorServo</FuncName>
+      <FuncName>SetWaitForAngle</FuncName>
+	  <FuncName>SetOneServo</FuncName>
+	  <FuncName>SetAllServo</FuncName>
+	  <FuncName>SetIntegrateMotor</FuncName>
+	  <FuncName>GetIntegrateAdc</FuncName>
+    </Band>
+
+    <Band Default="Light Sensor" CHS="光电传感器" CHT="光電傳感器">
+      <FuncName>GetADScable10</FuncName>
+      <FuncName>GetRemoIR</FuncName>
+      <FuncName>GetIRDist</FuncName>
+      <FuncName>SetIR</FuncName>
+      <FuncName>GetIRDete</FuncName>
+      <FuncName>GetIRone</FuncName>
+      <FuncName>GetPhoto</FuncName>
+      <FuncName>GetCompoI2</FuncName>
+      <FuncName>GetCompoI3</FuncName>
+      <FuncName>GetADextend14</FuncName>
+      <FuncName>GetDoor</FuncName>
+      <FuncName>GetTrace</FuncName>
+      <FuncName>SetTraceRef</FuncName>
+      <FuncName>SetBuzzer</FuncName>
+      <FuncName>GetMicroTrace</FuncName>
+      <FuncName>GetTraceV2I2C</FuncName>
+      <FuncName>SetTraceV2Color</FuncName>
+      <FuncName>SetTraceV2BeepI2C</FuncName>
+      <FuncName>SetTraceV2PercentI2C</FuncName>
+	  <FuncName>GetColorSensor</FuncName>
+	  <FuncName>SetColorSensor</FuncName>
+	  <FuncName>GetColorSensorID</FuncName>
+	  <FuncName>SetColorSensorID</FuncName>
+     </Band>
+
+    <Band Default="Other Sensor" CHS="其他检测" CHT="其他檢測">
+      <FuncName>GetTouch</FuncName>
+      <FuncName>GetCompassB</FuncName>
+      <FuncName>GetIRone</FuncName>
+      <FuncName>GetTemperature</FuncName>
+      <FuncName>GetADextend</FuncName>
+      <FuncName>GetVolume</FuncName>
+      <FuncName>GetAdUltrasound</FuncName>
+      <FuncName>GetUltrasound</FuncName>
+      <FuncName>GetSmoke</FuncName>
+      <FuncName>GetClose</FuncName>
+      <FuncName>GetADextend</FuncName>
+	  <FuncName>SetAHRS</FuncName>
+	  <FuncName>GetAHRS</FuncName>
+    </Band>
+
+    <Band Default="Build in" CHS="内置模块" CHT="內置模塊">
+      <FuncName>SetNS</FuncName>
+      <FuncName>SetTenthS</FuncName>
+      <FuncName>SetCentiS</FuncName>
+      <FuncName>SetThousandthS</FuncName>
+	  <FuncName>GetSysTime</FuncName>
+      <FuncName>GetSysTimeMs</FuncName>
+      <FuncName>SetSysTime</FuncName>
+      <FuncName>SetData</FuncName>
+      <FuncName>GetData</FuncName>
+      <FuncName>GetTouchScreenX</FuncName>
+      <FuncName>GetTouchScreenY</FuncName>
+	  <FuncName>SetTouchToScreenCoordinate</FuncName>
+      <FuncName>GetGSensor</FuncName>
+      <FuncName>GetInMic</FuncName>
+      <FuncName>SetInBeep</FuncName>
+      <FuncName>GetInVotage</FuncName>
+      <FuncName>GetButton1</FuncName>
+      <FuncName>GetButton2</FuncName>
+      <FuncName>GetButton3</FuncName>
+	  <FuncName>SetBluetooth</FuncName>
+      <FuncName>GetBluetooth</FuncName>
+    </Band>
+
+    <Band Default="Display" CHS="显示模块" CHT="顯示模塊">
+      <FuncName>SetLCDBack</FuncName>
+      <FuncName>SetLCD1Char</FuncName>
+      <FuncName>SetLCD3Char</FuncName>
+      <FuncName>SetLCD5Char</FuncName>
+      <FuncName>SetLCD8Char</FuncName>
+      <FuncName>SetLCDString</FuncName>
+      <FuncName>SetLCDClear</FuncName>
+	  <FuncName>SetLCDSolidCircle</FuncName>
+	  <FuncName>SetLCDRectangle</FuncName>
+	  <FuncName>SetLCDFilledRectangle</FuncName>
+	  
+    </Band>
+</root>

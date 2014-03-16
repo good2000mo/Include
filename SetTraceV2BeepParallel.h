@@ -1,0 +1,4 @@
+#ifndef _SETTRACEV2BEEPPARALLEL_
+#define _SETTRACEV2BEEPPARALLEL_
+#include <JMLib.c>
+#endif
